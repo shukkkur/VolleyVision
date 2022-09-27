@@ -3,6 +3,20 @@
 </p>
 
 <h2 align="center">
-  VolleyVision
+  VolleyVision🏐 
 </h2>
+
+<p align='center'>
+  <img src="https://img.shields.io/github/forks/shukkkur/VolleyVision.svg">
+  <img src="https://img.shields.io/github/stars/shukkkur/VolleyVision.svg">
+  <img src="https://img.shields.io/github/watchers/shukkkur/VolleyVision.svg">
+  
+  <br>
+  
+  <img src="https://img.shields.io/github/last-commit/shukkkur/VolleyVision.svg">
+  <img src="https://img.shields.io/badge/License-AGPL_v3-blue.svg">
+  <img src="https://hits.sh/github.com/shukkkur/VolleyVision.svg"/>
+  <br>
+  <code>University of Central Asia ⛰️</code>
+</p>
 
