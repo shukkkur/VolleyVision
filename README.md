@@ -41,12 +41,16 @@
 <p>Apply popular CV techniques such as object detection, tracking, action recognition and classification to volleyball data for popularization of volleyball in the field of artificial intelligence and contirubte to open-soruce community.</p>
 
 <h3>Datasets</h3>
+
+Ball            |  Players |  Court
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://github.com/shukkkur/VolleyVision/blob/6ac8230e48de95a8edb3a1c4793657ddb06f1409/README_files/volley-collage.jpg" width="500">  |  ![output_img1](https://github.com/shukkkur/VolleyVision/blob/2fa5999f2e69d2a21e80be2fb23f0bb59c861f4d/README_files/in_progress.jpg) |  ![output_img1](https://github.com/shukkkur/VolleyVision/blob/2fa5999f2e69d2a21e80be2fb23f0bb59c861f4d/README_files/in_progress.jpg)
+
+
+
 <ul>
   <li>
   <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true">Volleyball</a> (1 class, annotated)
-  <p align="left">
-    <img src="https://github.com/shukkkur/VolleyVision/blob/6ac8230e48de95a8edb3a1c4793657ddb06f1409/README_files/volley-collage.jpg" width="350px">
-  </p>
   <ul>
     <li>Source Images - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/9">25k_version</a></li>
     <li>Source Images + Augmented - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/9">60k_version</a></li>
