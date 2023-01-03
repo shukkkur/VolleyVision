@@ -44,6 +44,9 @@
 <ul>
   <li>
   <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true">Volleyball</a> (1 class, annotated)
+  <p align="left">
+    <img src="https://github.com/shukkkur/VolleyVision/blob/6ac8230e48de95a8edb3a1c4793657ddb06f1409/README_files/volley-collage.jpg" width="350px">
+  </p>
   <ul>
     <li>Source Images - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/9">25k_version</a></li>
     <li>Source Images + Augmented - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/9">60k_version</a></li>
