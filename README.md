@@ -47,19 +47,21 @@
   <ul>
     <li>Source Images - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/9">25k_version</a></li>
     <li>Source Images + Augmented - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/9">60k_version</a></li>
+  </ul>
   </li>
   
   <li>
   Players
   <ul>
     <li>In Progress...</li>
+  </ul>
   </li>
-    
+  
   <li>
-  Court
-  <ul>
-    <li>In Progress...</li>
+    Court
+    <ul>
+      <li>In Progress...</li>
+    </ul>
   </li>
-
   
 </ul>
