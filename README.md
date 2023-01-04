@@ -23,16 +23,6 @@
 </p>
 
 
-<h3>Acknowledgement</h3>
-
-<p>This project wouldn't possible without amazing & free RoboFlow <a href="https://roboflow.com/annotate">annotation tools</a> , open-source <a href="https://universe.roboflow.com/">datasets</a>, quick & easy <a href="https://roboflow.com/deploy">deployement</a> and high-level <a href="https://blog.roboflow.com/">blog posts</a></p>
-
-<p align="center">
-  <a href="https://roboflow.com/">
-    <img src="https://user-images.githubusercontent.com/78250180/210331133-b8102086-23ae-4034-a9d9-043f7c277618.png" width="500px">
-  </a>
-</p>
-
 <h3>About</h3>
 
 <p><strong>(7th November, 2022)</strong> The result of my project should be a web application, that takes a  volleyball video (small sized, single rally) and is able to detect and track the ball, players, the court and is able provide game statistics.</p>
@@ -72,3 +62,24 @@ Ball            |  Players |  Court
   </li>
   
 </ul>
+
+
+<h3>Acknowledgement</h3>
+
+<details><summary> <b>Expand</b> </summary>
+  <ul>
+    <li>
+    <p>This project wouldn't possible without amazing & free RoboFlow <a href="https://roboflow.com/annotate">annotation tools</a> , open-source <a href="https://universe.roboflow.com/">datasets</a>, quick & easy <a href="https://roboflow.com/deploy">deployement</a> and high-level <a href="https://blog.roboflow.com/">blog posts</a></p>
+    
+  <p align="center">
+  <a href="https://roboflow.com/">
+    <img src="https://user-images.githubusercontent.com/78250180/210331133-b8102086-23ae-4034-a9d9-043f7c277618.png" width="500px">
+  </a>
+  </p>
+    </li>
+    
+    <li>Supervisor</li>
+    <li>Course Instructor</li>
+    <li>University of Central Asia</li>
+  </ul>
+</details>
