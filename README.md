@@ -69,8 +69,7 @@ Ball            |  Players |  Court
 <details><summary> <b>Expand</b> </summary>
   <ul>
     <li>
-    <p>This project wouldn't possible without amazing & free RoboFlow <a href="https://roboflow.com/annotate">annotation tools</a> , open-source <a href="https://universe.roboflow.com/">datasets</a>, quick & easy <a href="https://roboflow.com/deploy">deployement</a> and high-level <a href="https://blog.roboflow.com/">blog posts</a></p>
-  </li>
+    This project wouldn't possible without amazing & free RoboFlow <a href="https://roboflow.com/annotate">annotation tools</a> , open-source <a href="https://universe.roboflow.com/">datasets</a>, quick & easy <a href="https://roboflow.com/deploy">deployement</a> and high-level <a href="https://blog.roboflow.com/">blog posts</a></li>
   <li>Supervisor</li>
   <li>Course Instructor</li>
   <li>University of Central Asia</li>
