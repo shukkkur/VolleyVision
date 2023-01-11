@@ -44,7 +44,6 @@ Ball            |  Players |  Court
   <ul>
     <li>Source Images - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/9">25k_version</a></li>
     <li>Source Images (640x640) - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/13">25k_resized</a></li>
-    <li>Source Images + Augmented - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/12">42k_version</a></li>
   </ul>
   </li>
   
