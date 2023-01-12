@@ -37,7 +37,6 @@ Ball            |  Players |  Court
 <img src="https://github.com/shukkkur/VolleyVision/blob/6ac8230e48de95a8edb3a1c4793657ddb06f1409/README_files/volley-collage.jpg" width="500">  |  ![output_img1](https://github.com/shukkkur/VolleyVision/blob/2fa5999f2e69d2a21e80be2fb23f0bb59c861f4d/README_files/in_progress.jpg) |  ![output_img1](https://github.com/shukkkur/VolleyVision/blob/2fa5999f2e69d2a21e80be2fb23f0bb59c861f4d/README_files/in_progress.jpg)
 
 
-
 <ul>
   <li>
   <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true">Volleyball</a> (1 class, annotated)
@@ -75,3 +74,43 @@ Ball            |  Players |  Court
   <li>University of Central Asia</li>
   </ul>
 </details>
+
+
+<!--
+<table>
+<tr>
+<td> Status </td> <td> Response </td>
+</tr>
+<tr>
+<td> 200 </td>
+<td>
+
+```python
+from roboflow import Roboflow
+rf = Roboflow(api_key="sparlyxRfGqxvrUwHldB")
+project = rf.workspace().project("radardata")
+model = project.version(1).model
+
+# infer on a local image
+print(model.predict("your_image.jpg", confidence=40, overlap=30).json())
+
+# visualize your prediction
+# model.predict("your_image.jpg", confidence=40, overlap=30).save("prediction.jpg")
+
+# infer on an image hosted elsewhere
+# print(model.predict("URL_OF_YOUR_IMAGE", hosted=True, confidence=40, overlap=30).json())
+```
+V Extra blank line below!
+
+</td>
+</tr>
+<tr>
+<td> 400 </td>
+<td>
+
+**Markdown** _here_. (Blank lines needed before and after!)
+
+</td>
+</tr>
+</table>
+-->
