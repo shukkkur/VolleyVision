@@ -67,7 +67,7 @@ extension = os.path.splitext(output_video)[1]
 
 if output_video == "":  # 
     os.makedirs('VideoOutput', exist_ok=True)
-    output_video = os.path.join("VideoOutput", model_name + '_' + basename)
+    output_video = os.path.join("VideoOutput", model_name + 'Track' + '_' + basename)
 else:  # check if user path exists, create otherwise
     f = os.path.split(output_video)[0]
     if not os.path.isdir(f):
@@ -197,4 +197,4 @@ pbar.close()
 t2 = datetime.now()
 dt = t2 - t1
 ###################
-print(f'Elдapsed Time: {dt.seconds/60:.2f} minutes')
+print(f'Done - {dt.seconds/60:.2f} minutes')
