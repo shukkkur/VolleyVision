@@ -1,12 +1,11 @@
-<hr>
 <p align="center">
   <img src="https://github.com/shukkkur/VolleyVision/blob/b9e2ea29be1337f8cd7c25f7f06741ecfde9fc62/README_files/vv_logo.png" width=200>
 </p>
 
-<h3 align="center">
-  👁️Volley🏐Vision👁️
-</h3>
-<hr>
+<h1 align="center">
+  👁️VolleyVision👁️
+</h1>
+
 
 <p align='center'>
   <img src="https://img.shields.io/github/forks/shukkkur/VolleyVision.svg">
@@ -23,14 +22,34 @@
 </p>
 
 
-<h3>About</h3>
+<h2>🧪 Example usage</h2>
 
-<p><strong>(7th November, 2022)</strong> The result of my project should be a web application, that takes a  volleyball video (small sized, single rally) and is able to detect and track the ball, players, the court and is able provide game statistics.</p>
+<p align="center">
+  <img src="https://github.com/shukkkur/VolleyVision/blob/192abab595fb8252d7184a48d81fa3b5d5cd96a1/assets/rf_backview.gif" width=1000>
+</p>
 
-<h3>Aim</h3>
-<p>Apply popular CV techniques such as object detection, tracking, action recognition and classification to volleyball data for popularization of volleyball in the field of artificial intelligence and contirubte to open-soruce community.</p>
 
-<h3>Datasets</h3>
+<h2>📝 About</h2>
+
+<p><strong>7th November, 2022</strong> | The result of my project should be a web application, that takes a  volleyball video (small sized, single rally) and is able to detect and track the ball, players, the court and is able to provide game statistics.</p>
+
+
+<h2>🎯 Objectives</h2>
+
+<p>🏐 Learn and apply popular CV techniques to volleyball data
+  <br>
+  🏐 Popularize volleyball in the field of ML
+  <br>
+  🏐 Create volleyball datasets
+  <br>
+  🏐 Contirubte to open-soruce community
+  <br>
+
+</p>
+
+
+
+<h2>💾 Datasets</h2>
 
 Ball            |  Players |  Court
 :-------------------------:|:-------------------------:|:-------------------------:
@@ -61,6 +80,28 @@ Ball            |  Players |  Court
   </li>
   
 </ul>
+
+<h2>🏃‍♂️ How to Run</h2>
+
+<ol>
+  
+  <li>
+    Clone this repository
+  </li>
+  
+  ```
+  git clone https://github.com/shukkkur/VolleyVision.git
+  ```
+  
+  <li>
+    Install the requirements
+  </li>
+  
+  ```
+  pip install -r requirements.txt
+  ```
+
+
 
 
 <h3>Acknowledgement</h3>
