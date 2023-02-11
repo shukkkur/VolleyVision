@@ -26,7 +26,7 @@
 
 <code>volleyball_15.mp4</code> | <code>back_view.mp4</code>
 :-------------------------:|:-------------------------:
-<img src="https://github.com/shukkkur/VolleyVision/blob/88474342fa4330ce268668986d9f5061d7ee8f6a/assets/y7_volleyball.gif"> | <img src="https://github.com/shukkkur/VolleyVision/blob/bcdc93c527d174e6bb22b5885b9267a819b39b59/assets/rf_backview.gif">
+<img src="https://github.com/shukkkur/VolleyVision/blob/88474342fa4330ce268668986d9f5061d7ee8f6a/assets/y7Detect_volleyball15.gif"> | <img src="https://github.com/shukkkur/VolleyVision/blob/bcdc93c527d174e6bb22b5885b9267a819b39b59/assets/rf_backview.gif">
 
 
 <h2>🎯 Objectives</h2>
