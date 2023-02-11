@@ -25,7 +25,7 @@
 <h2>🧪 Example usage</h2>
 
 <p align="center">
-  <img src="https://github.com/shukkkur/VolleyVision/blob/192abab595fb8252d7184a48d81fa3b5d5cd96a1/assets/rf_backview.gif" width=1000>
+  <img src="https://github.com/shukkkur/VolleyVision/blob/bcdc93c527d174e6bb22b5885b9267a819b39b59/assets/rf_backview.gif" width=1000>
 </p>
 
 
