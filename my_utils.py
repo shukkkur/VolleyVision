@@ -54,6 +54,10 @@ def plot_image(image: np.ndarray, size: int = 12) -> None:
 
 
 def x_y_w_h(prediciton, model_name) -> Tuple:
+    """
+    - RoboFlow model returns the center of the bbox and its width and height
+    - Yolov7/Pytorch model the upper left and the bottom right corners
+    """
     if model_name == 'roboflow':
         try:
             x = int(prediciton.json()['predictions'][0]['x'])
@@ -178,3 +182,17 @@ class RoboYOLO:
 
             pred = self.model(im_pil)
             return pred
+
+
+def get_circle(bbox: Tuple[int, int, int, int]):
+    """
+    Get the centroid and the radius of bbox given
+    the upper left corner and the width and heigh
+    """
+    x0, y0, w, h = bbox
+    
+    centr_x = int(x0 + w / 2)
+    centr_y = int(y0 + h / 2)
+    radius = int((w + h) / 4)
+
+    return centr_x, centr_y, radius

@@ -1,5 +1,6 @@
 import cv2
 import torch
+import queue
 import os, sys
 import argparse
 import warnings
@@ -20,7 +21,7 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument("--input_video_path",
                                         type=str,
-                                        default="assets/volleyball_15.mp4",
+                                        default="assets/back_view.mp4",
                                         help="path to the video with volleyball in it")
 parser.add_argument("--output_video_path",
                                         type=str,
@@ -38,6 +39,20 @@ parser.add_argument("--confidence",
 parser.add_argument("--show",
                                         action='store_true',
                                         help="watch preview")
+parser.add_argument("--marker",
+                                        type=str,
+                                        default='circle',
+                                        choices=['circle', 'box'],
+                                        help="how to highlight the ball")
+parser.add_argument("--color",
+                                        type=str,
+                                        default='yellow',
+                                        choices=['black', 'white', 'red', 'green', 'purple',
+                                                        'blue', 'yellow', 'cyan','gray', 'navy'],
+                                        help="color for highlighting the ball")
+parser.add_argument("--no_trace",
+                                        action='store_true',
+                                        help="don't draw trajectory of the ball")
 
 args = parser.parse_args()
 input_video = args.input_video_path
@@ -45,6 +60,30 @@ output_video = args.output_video_path
 model_name = args.model
 conf = args.confidence
 show = args.show
+marker = args.marker
+no_trace = args.no_trace
+color = args.color
+
+if color == 'yellow':
+    color = [0, 255, 255]
+elif color == 'black':
+    color = [0, 0, 0]
+elif color == 'white':
+    color = [255, 255, 255]
+elif color == 'red':
+    color = [0, 0, 255]
+elif color == 'green':
+    color = [0, 255, 0]
+elif color == 'blue':
+    color = [255, 0, 0]
+elif color == 'cyan':
+    color = [255, 255, 0]
+elif color == 'gray':
+    color = [128, 128 ,128]
+elif color == 'purple':
+    color = [128, 0, 128]
+elif color == 'navy':
+    color = [128, 0, 0]
 ###################
 
 
@@ -109,7 +148,7 @@ while bbox == (0, 0, 0, 0):
     ret, frame = video_in.read()
     if not ret:
         break
-    
+
     pred = model.predict(frame)
     bbox = x_y_w_h(pred, model_name) 
     
@@ -117,6 +156,15 @@ if bbox == (0, 0, 0, 0):
     raise Exception("Processed the whole video but failed to detect any volleyball")
 else:
     print('Volleyball found at ', bbox)
+###################
+
+
+### Trajectory of volleyball ###
+q = queue.deque()  # we need to save the coordinate of previous 7 frames
+for i in range(0, 8):
+    q.appendleft(None)
+
+q.appendleft(bbox)
 ###################
 
 
@@ -140,7 +188,7 @@ while video_in.isOpened():
     if not ret:
         break
     debug_image = copy.deepcopy(image)
-    
+
     # Update Progress Bar
     pbar.update(1)
     
@@ -156,26 +204,51 @@ while video_in.isOpened():
 
     if ok:
         if counter < 10:
-            # Drawing of the Bounding Box
-            cv2.rectangle(debug_image, bbox, [255, 0, 0], thickness=2)
+            q.appendleft(bbox)
+            q.pop()
         else:
             if distance > 50:
-                #  significat change bbox location / all good 
-                cv2.rectangle(debug_image, bbox, [255, 0, 0], thickness=2)
+                #  significant change in bbox location / all good 
+                q.appendleft(bbox)
+                q.pop()
                 counter = 0
             else:
                 #  bbox hasn't moved / stuck on non-volleyball object
                 #  since we know that volleyball woud always be in motion 
                 pred = model.predict(image)
                 bbox = x_y_w_h(pred, model_name)
+                q.appendleft(bbox)
+                q.pop()
                 counter = 0
 
                 if bbox != (0, 0, 0, 0):
-                    cv2.rectangle(debug_image, bbox, [255, 0, 0], thickness=2)
                     tracker = initialize_tracker(image, bbox)
                     previous = bbox 
                 else:
-                    pass
+                    q.appendleft(None)
+                    q.pop()
+
+    ### marker, color & trace ###
+    for i in range(0, 8):
+        if q[i] is not None:
+
+            if i == 0:  # current detection
+                if marker == 'box':
+                    cv2.rectangle(debug_image, q[i], color, thickness=2)
+                elif marker == 'circle':
+                    *center, r = get_circle(q[i])
+                    cv2.circle(debug_image, center, r, color, 5)
+
+            elif (i != 0) and (no_trace is False):  # pass detections
+                if marker == 'box':
+                    cv2.rectangle(debug_image, q[i], color, thickness=2)
+                elif marker == 'circle':
+                    *center, r = get_circle(q[i])
+                    try:
+                        cv2.circle(debug_image, center, r-10, color, -1)
+                    except:
+                        cv2.circle(debug_image, center, r, color, -1)                
+    ###################
 
     video_out.write(debug_image)
 ###################
