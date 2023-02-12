@@ -182,7 +182,7 @@ Ball            |  Players |  Court
   <i>Note that, it took <code>volley_track.py</code> <strong>0.73</strong> minutes to process the video, whereas <code>volley_dtect.py</code> completed in <strong>2.75 minutes</strong>.</i>
 
 <li>
-  If you are interested in running the models on individual frames, for <code>roboflow</code> use this <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/model/13">API</a>. And for <code>yolov7-tiny</code> run the following line
+  If you are interested in running the models on individual frames, for <code>roboflow</code> use this <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/model/13">API</a>. And for <code>yolov7-tiny</code> run the following line with <code>--source</code> being your image, folder with images or even video.
 </li>
 
 ```
