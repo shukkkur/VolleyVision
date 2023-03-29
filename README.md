@@ -18,6 +18,15 @@
   <img src="https://img.shields.io/badge/License-AGPL_v3-blue.svg">
   <img src="https://hits.sh/github.com/shukkkur/VolleyVision.svg"/>
   <br>
+  
+  <a href="https://universe.roboflow.com/shakhansho-sabzaliev/volleyball-tracking">
+    <img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img>
+</a>
+<a href="https://universe.roboflow.com/shakhansho-sabzaliev/volleyball-tracking/model/">
+    <img src="https://app.roboflow.com/images/try-model-badge.svg"></img>
+</a>
+
+<br>
   <code>University of Central Asia ⛰️</code>
 </p>
 
