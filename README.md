@@ -18,6 +18,15 @@
   <img src="https://img.shields.io/badge/License-AGPL_v3-blue.svg">
   <img src="https://hits.sh/github.com/shukkkur/VolleyVision.svg"/>
   <br>
+  
+  <a href="https://universe.roboflow.com/shakhansho-sabzaliev/volleyball-tracking">
+    <img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img>
+</a>
+<a href="https://universe.roboflow.com/shakhansho-sabzaliev/volleyball-tracking/model/">
+    <img src="https://app.roboflow.com/images/try-model-badge.svg"></img>
+</a>
+
+<br>
   <code>University of Central Asia ⛰️</code>
 </p>
 
@@ -62,7 +71,7 @@
 <!--   <strong>February 10, 2023 </strong> -->
 <!--    <i>Closing the first stage moderetly satisfied</i>.  -->
 <!--   <br> -->
-  Two trained models: <a href="https://blog.roboflow.com/new-and-improved-roboflow-train/">RoboFlow</a> (<a href="https://docs.roboflow.com/train">AutoML training</a>) and <a href="https://github.com/WongKinYiu/yolov7">yoloV7-tiny</a> (local training). Both were trained on my newly created <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/13">dataset</a> comprised of <strong>25k</strong> images of size <strong>640x640</strong>. If you are interested in the yolov7-tiny training process check out - <a href="https://wandb.ai/volleyvision/YOLOR/runs/2u30vyzp/overview?workspace=user-">wandb.ai</a>. As for the tracker, <a href="https://github.com/foolwood/DaSiamRPN">DaSiamRPN</a> (<a href="https://docs.opencv.org/4.x/de/d93/classcv_1_1TrackerDaSiamRPN.html">cv2</a>) was used.
+  Two trained models: <a href="https://blog.roboflow.com/new-and-improved-roboflow-train/">RoboFlow</a> (<a href="https://docs.roboflow.com/train">AutoML training</a>) and <a href="https://github.com/WongKinYiu/yolov7">yoloV7-tiny</a> (local training). Both were trained on my newly created <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/13">dataset</a> comprised of <strong>25k</strong> images of size <strong>640x640</strong>.  As for the tracker, <a href="https://github.com/foolwood/DaSiamRPN">DaSiamRPN</a> (<a href="https://docs.opencv.org/4.x/de/d93/classcv_1_1TrackerDaSiamRPN.html">cv2</a>) was used. If you are interested in the yolov7-tiny training process check out - <a href="https://wandb.ai/volleyvision/YOLOR/runs/2u30vyzp/overview?workspace=user-">wandb.ai</a>.
   <br><br>
   <strong>Metrics</strong>
   <br>
@@ -71,7 +80,7 @@
   <code>yoloV7-tiny - mAP 74.1% | precision 86.4% | recall 65.8%</code>
   <br><br>
 
-  <strong>RoboFlow</strong> model is more accurate and works better on official matches, rather than yolov7 model.However, it requires longer time for inference. Whereas, <strong>yoloV7-tiny</strong> is capable of real-time inference but is less accurate but still good for larger volleyballs. I was trying to train the standard <a href="https://github.com/WongKinYiu/yolov7#performance">yolov7</a>, however, with GPU memory being 4GB, I could only afford training with <code>--batch_size=8 --img-size=480</code>, which didn't yield good results.
+  <strong>RoboFlow</strong> model is more accurate and works better on official matches, rather than yolov7 model.However, it requires longer time for inference. Whereas, <strong>yoloV7-tiny</strong> is capable of real-time inference but is less accurate but still good for larger volleyballs. I was trying to train the standard <a href="https://github.com/WongKinYiu/yolov7#performance">yolov7</a>, however, with GPU memory being 4GB, I could only afford training with <code>--batch_size=8 --img-size=480</code>, which didn't yield best results.
 
   
 <!--   https://blog.roboflow.com/new-and-improved-roboflow-train/ -->
@@ -179,7 +188,15 @@ Ball            |  Players |  Court
 :-------------------------:|:-------------------------:
 <img src="https://github.com/shukkkur/VolleyVision/blob/a87326441528ee89f4d23a81e2461d6963534134/assets/track_men.gif"> | <img src="https://github.com/shukkkur/VolleyVision/blob/a87326441528ee89f4d23a81e2461d6963534134/assets/rf_rallyMen.gif">
 
-  <i>Note that, it took <code>volley_track.py</code> <strong>0.73</strong> minutes to process the video, whereas <code>volley_dtect.py</code> completed in <strong>2.75 minutes<strong>.</i>
+  <i>Note that, it took <code>volley_track.py</code> <strong>0.73</strong> minutes to process the video, whereas <code>volley_dtect.py</code> completed in <strong>2.75 minutes</strong>.</i>
+
+<li>
+  If you are interested in running the models on individual frames, for <code>roboflow</code> use this <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/model/13">API</a>. And for <code>yolov7-tiny</code> run the following line with <code>--source</code> being your image, folder with images or even video.
+</li>
+
+```
+python detect.py --weights best.pt --conf 0.5 --source assets/small
+```
 
 <h3>Acknowledgement</h3>
 
