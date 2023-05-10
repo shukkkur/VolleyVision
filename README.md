@@ -26,9 +26,11 @@
 
 Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/main/Stage%20I%20-%20Volleyball/assets)
 :-------------------------:|:-------------------------:
-<img src="https://github.com/shukkkur/VolleyVision/blob/88474342fa4330ce268668986d9f5061d7ee8f6a/assets/y7Detect_volleyball15.gif" width="300" height="200"> | <img src="https://github.com/shukkkur/VolleyVision/blob/eb639742363fb5564d6de4c3b1bf3da808162aa9/assets/rf_backview.gif" width="300" height="200">
+<img src="https://github.com/shukkkur/VolleyVision/blob/88474342fa4330ce268668986d9f5061d7ee8f6a/assets/y7Detect_volleyball15.gif" width="350" height="250"> | <img src="https://github.com/shukkkur/VolleyVision/blob/eb639742363fb5564d6de4c3b1bf3da808162aa9/assets/rf_backview.gif" width="350" height="250">
+<img src="https://github.com/shukkkur/VolleyVision/blob/2e4ce97819f591573de99fcfe04ba0f0259dff9a/assets/rf_men_rally.gif" width="350" height="250"> | <img src="https://github.com/shukkkur/VolleyVision/blob/2e4ce97819f591573de99fcfe04ba0f0259dff9a/assets/rf_women_rally.gif" width="350" height="250">
 Action Recognition | Players Detection
-<img src="https://github.com/shukkkur/VolleyVision/blob/aae563828d54dd16f68c75518e3e3a18c14f2092/assets/actions_screen.jpg" width="300" height="200"> | <img src="https://github.com/shukkkur/VolleyVision/blob/aae563828d54dd16f68c75518e3e3a18c14f2092/assets/players_screen.jpg" width="300" height="200">
+<img src="https://github.com/shukkkur/VolleyVision/blob/aae563828d54dd16f68c75518e3e3a18c14f2092/assets/actions_screen.jpg" width="350" height="250"> | <img src="https://github.com/shukkkur/VolleyVision/blob/aae563828d54dd16f68c75518e3e3a18c14f2092/assets/players_screen.jpg" width="350" height="250">
+
 
 
 <h2>🎯 Objectives</h2>
