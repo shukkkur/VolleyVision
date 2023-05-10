@@ -89,7 +89,17 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 <ul>
    <li>
-    <h3>Stage II | Player Detection & Action Recognition</h3>
+    <h3>Stage II | Action Recognition & Player Detection</h3>
+     
+      <ul>
+        
+        <h4>Action Recognition</h4>
+        <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions"><img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img></a>
+        <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/model/"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
+        <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/weights/actions/yV8_medium/weights"><img src="https://img.shields.io/badge/Download-Model%20Weights-blue" alt="yV8 Weights"></a>
+
+      </ul>
+     
    </li>
 </ul>
 
