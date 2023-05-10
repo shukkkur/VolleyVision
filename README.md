@@ -11,10 +11,9 @@
   <img src="https://img.shields.io/github/forks/shukkkur/VolleyVision.svg">
   <img src="https://img.shields.io/github/stars/shukkkur/VolleyVision.svg">
   <img src="https://img.shields.io/github/watchers/shukkkur/VolleyVision.svg">
-  
+ 
   <br>
-<!--   [![License: CC BY-NC-ND 4.0]()]() -->
-
+ 
   <img src="https://img.shields.io/github/last-commit/shukkkur/VolleyVision.svg">
   <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg"></a>
   <img src="https://hits.sh/github.com/shukkkur/VolleyVision.svg"/>
@@ -25,11 +24,10 @@
 
 <h2>🧪 Example usage</h2>
 
-<code>volleyball_15.mp4</code> | <code>back_view.mp4</code>
+Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/main/Stage%20I%20-%20Volleyball/assets)
 :-------------------------:|:-------------------------:
 <img src="https://github.com/shukkkur/VolleyVision/blob/88474342fa4330ce268668986d9f5061d7ee8f6a/assets/y7Detect_volleyball15.gif"> | <img src="https://github.com/shukkkur/VolleyVision/blob/eb639742363fb5564d6de4c3b1bf3da808162aa9/assets/rf_backview.gif">
-<code>volleyball_15.mp4</code> | <code>back_view.mp4</code>
-<img src="https://github.com/shukkkur/VolleyVision/blob/88474342fa4330ce268668986d9f5061d7ee8f6a/assets/y7Detect_volleyball15.gif"> | <img src="https://github.com/shukkkur/VolleyVision/blob/eb639742363fb5564d6de4c3b1bf3da808162aa9/assets/rf_backview.gif">
+<img src="https://github.com/shukkkur/VolleyVision/blob/2e4ce97819f591573de99fcfe04ba0f0259dff9a/assets/rf_men_rally.gif"> | <img src="https://github.com/shukkkur/VolleyVision/blob/2e4ce97819f591573de99fcfe04ba0f0259dff9a/assets/rf_women_rally.gif">
 
 
 <h2>🎯 Objectives</h2>
@@ -56,7 +54,7 @@
   
   <li>
     <h3>
-      Stage I | Volleyball Tracking
+      Stage I | Volleyball Detection &
     </h3>
   </li>
 </ul>
