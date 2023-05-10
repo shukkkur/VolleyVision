@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/shukkkur/VolleyVision/blob/b9e2ea29be1337f8cd7c25f7f06741ecfde9fc62/README_files/vv_logo.png" width=200>
+  <img src="https://github.com/shukkkur/VolleyVision/blob/280fed79d290c1cf6d53c869fa60355eeb04d148/assets/vv_logo.png" width=200>
 </p>
 
 <h1 align="center">
@@ -116,7 +116,7 @@
 
 Ball            |  Players |  Court
 :-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://github.com/shukkkur/VolleyVision/blob/6ac8230e48de95a8edb3a1c4793657ddb06f1409/README_files/volley-collage.jpg" width="500">  |  ![output_img1](https://github.com/shukkkur/VolleyVision/blob/2fa5999f2e69d2a21e80be2fb23f0bb59c861f4d/README_files/in_progress.jpg) |  ![output_img1](https://github.com/shukkkur/VolleyVision/blob/2fa5999f2e69d2a21e80be2fb23f0bb59c861f4d/README_files/in_progress.jpg)
+<img src="https://github.com/shukkkur/VolleyVision/blob/6ac8230e48de95a8edb3a1c4793657ddb06f1409/README_files/volley-collage.jpg" width="500">  |  ![output_img1](https://github.com/shukkkur/VolleyVision/blob/280fed79d290c1cf6d53c869fa60355eeb04d148/assets/in_progress.jpg) |  ![output_img1](https://github.com/shukkkur/VolleyVision/blob/280fed79d290c1cf6d53c869fa60355eeb04d148/assets/in_progress.jpg)
 
 
 <ul>
@@ -186,7 +186,7 @@ Ball            |  Players |  Court
   
   <code>volley_track.py</code>  | <code>volley_detect.py</code>
 :-------------------------:|:-------------------------:
-<img src="https://github.com/shukkkur/VolleyVision/blob/a87326441528ee89f4d23a81e2461d6963534134/assets/track_men.gif"> | <img src="https://github.com/shukkkur/VolleyVision/blob/a87326441528ee89f4d23a81e2461d6963534134/assets/rf_rallyMen.gif">
+<img src="https://github.com/shukkkur/VolleyVision/blob/a87326441528ee89f4d23a81e2461d6963534134/assets/track_men.gif"> | <img src="https://github.com/shukkkur/VolleyVision/blob/280fed79d290c1cf6d53c869fa60355eeb04d148/assets/rf_men_rally.gif">
 
   <i>Note that, it took <code>volley_track.py</code> <strong>0.73</strong> minutes to process the video, whereas <code>volley_dtect.py</code> completed in <strong>2.75 minutes</strong>.</i>
 
