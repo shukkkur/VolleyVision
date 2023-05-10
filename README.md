@@ -18,7 +18,7 @@
   <img src="https://hits.sh/github.com/shukkkur/VolleyVision.svg"/>
   
   <br>
-  <a href="https://ucentralasia.org/home"><code>University of Central Asia ⛰️</code></a>
+  <a href="https://ucentralasia.org/home"><code>University of Central Asia</a> ⛰️</code>
   
 </p>
 
