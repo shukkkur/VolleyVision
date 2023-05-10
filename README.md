@@ -106,13 +106,6 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 </p>
 </details>
 
-<br>
-
-<p>
-<i><strong>For any additional quesitons feel free to <a href="https://github.com/shukkkur/VolleyVision/issues/new">open an issue</a> or <a href="https://github.com/shukkkur#feel-free-to-connectcontact">contact me</a></strong></i>
-</p>
-
-
 <h2>💾 Datasets</h2>
 
 | Volleyball | Actions | Players | Court |
@@ -179,6 +172,12 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
   </ul>
 </details>
 
+<details><summary><h2>📞 Contact</h2></summary>
+
+<p>
+<i><strong>For any additional quesitons feel free to <a href="https://github.com/shukkkur/VolleyVision/issues/new">open an issue</a> or <a href="https://github.com/shukkkur#feel-free-to-connectcontact">contact me</a></strong></i>
+</p>
+</details>
 
 <!--
 <table>
