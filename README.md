@@ -23,14 +23,13 @@
 </p>
 
 
-<details><summary><h2>🧪 Example usage</h2></summary>
+<h2>🧪 Example usage</h2>
 
 Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/main/Stage%20I%20-%20Volleyball/assets)
 :-------------------------:|:-------------------------:
 <img src="https://github.com/shukkkur/VolleyVision/blob/88474342fa4330ce268668986d9f5061d7ee8f6a/assets/y7Detect_volleyball15.gif" width="385" height="250"> | <img src="https://github.com/shukkkur/VolleyVision/blob/eb639742363fb5564d6de4c3b1bf3da808162aa9/assets/rf_backview.gif" width="385" height="250">
 <strong>Action Recognition</strong> | <strong>Players Detection</strong>
 <img src="https://github.com/shukkkur/VolleyVision/blob/1c6c180c445a8be413defac520899e411c07f043/assets/actions.gif" width="385" height="250"> | <img src="https://github.com/shukkkur/VolleyVision/blob/aae563828d54dd16f68c75518e3e3a18c14f2092/assets/players_screen.jpg" width="385" height="250">
-</details>
 
 
 <details><summary><h2>🎯 Objectives</h2></summary>
@@ -49,17 +48,13 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 
 
-<details><summary><h2>📝 About</h2></summary>
+<h2>📝 About</h2>
 
 <p><strong>November 7, 2022</strong> | The result of my project should be a web application, that takes a  volleyball video (small sized, single rally) and is able to detect and track the ball, players, the court and is able to provide game statistics.</p>
 
 <ul>
   
-  <li>
-    <h3>
-      Stage I | Volleyball Detection & Tracking
-    </h3>
-  </li>
+  <details><summary><li><h3>Stage I | Volleyball Detection & Tracking</h3></li></summary>
 </ul>
 
 <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking/model/">
@@ -84,7 +79,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
   <strong>RoboFlow</strong> model is more accurate and works better on official matches, rather than yolov7 model.However, it requires longer time for inference. Whereas, <strong>yoloV7-tiny</strong> is capable of real-time inference but is less accurate but still good for larger volleyballs. I was trying to train the standard <a href="https://github.com/WongKinYiu/yolov7#performance">yolov7</a>, however, with GPU memory being 4GB, I could only afford training with <code>--batch_size=8 --img-size=480</code>, which didn't yield best results.
 
 </p>
-
+</details>
 <ul>
    <li>
     <h3>
@@ -122,7 +117,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 <p>
 <i><strong>For any additional quesitons feel free to <a href="https://github.com/shukkkur/VolleyVision/issues/new">open an issue</a> or <a href="https://github.com/shukkkur#feel-free-to-connectcontact">contact me</a></strong></i>
 </p>
-</details>
+
 
 <details><summary><h2>💾 Datasets</h2></summary>
 
