@@ -148,11 +148,13 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 <p>Creative Commons Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND) license.</p>
 
 
-<br>
+<details><summary><h2>Sponsor</h2></summary>
+  <ul>
+    <li>If you find my work useful or interesting, please consider supporting me on <strong><a href="https://ko-fi.com/shukkkur">Ko-fi</a></strong>.</li>
+  </ul>
+</details>
 
-<h3>Acknowledgement</h3>
-
-<details><summary> <b>Expand</b> </summary>
+<details><summary><h2>Acknowledgement</h2></summary>
   <ul>
     <li>
     This project wouldn't possible without amazing & free RoboFlow <a href="https://roboflow.com/annotate">annotation tools</a> , open-source <a href="https://universe.roboflow.com/">datasets</a>, quick & easy <a href="https://roboflow.com/deploy">deployement</a> and high-level <a href="https://blog.roboflow.com/">blog posts</a></li>
