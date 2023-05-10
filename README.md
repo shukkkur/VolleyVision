@@ -8,17 +8,18 @@
 
 
 <p align='center'>
-  <img src="https://img.shields.io/github/forks/shukkkur/VolleyVision.svg">
-  <img src="https://img.shields.io/github/stars/shukkkur/VolleyVision.svg">
-  <img src="https://img.shields.io/github/watchers/shukkkur/VolleyVision.svg">
+  <a href="https://github.com/shukkkur/VolleyVision/forks?include=active%2Carchived%2Cinactive%2Cnetwork&page=1&period=2y&sort_by=stargazer_counts"><img src="https://img.shields.io/github/forks/shukkkur/VolleyVision.svg"></a>
+  <a href="https://github.com/shukkkur/VolleyVision/stargazers"><img src="https://img.shields.io/github/stars/shukkkur/VolleyVision.svg"></a>
+  <a href="https://github.com/shukkkur/VolleyVision/watchers"><img src="https://img.shields.io/github/watchers/shukkkur/VolleyVision.svg"></a>
  
   <br>
- 
-  <img src="https://img.shields.io/github/last-commit/shukkkur/VolleyVision.svg">
+  <a href=""><img src="https://img.shields.io/github/last-commit/shukkkur/VolleyVision.svg"></a>
   <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg"></a>
   <img src="https://hits.sh/github.com/shukkkur/VolleyVision.svg"/>
+  
   <br>
-  <code>University of Central Asia ⛰️</code>
+  <a href="https://ucentralasia.org/home"><code>University of Central Asia ⛰️</code></a>
+  
 </p>
 
 
