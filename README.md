@@ -32,7 +32,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 <img src="https://github.com/shukkkur/VolleyVision/blob/1c6c180c445a8be413defac520899e411c07f043/assets/actions.gif" width="385" height="250"> | <img src="https://github.com/shukkkur/VolleyVision/blob/aae563828d54dd16f68c75518e3e3a18c14f2092/assets/players_screen.jpg" width="385" height="250">
 
 
-<details><summary><h2>🎯 Objectives</h2></summary>
+<h2>🎯 Objectives</h2>
 
 <p>🏐 Learn and apply popular CV techniques to volleyball data
   <br>
@@ -44,7 +44,6 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
   <br>
 
 </p>
-</details>
 
 
 
@@ -52,10 +51,8 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 <p><strong>November 7, 2022</strong> | The result of my project should be a web application, that takes a  volleyball video (small sized, single rally) and is able to detect and track the ball, players, the court and is able to provide game statistics.</p>
 
-<ul>
-  
-  <details><summary><li><h3>Stage I | Volleyball Detection & Tracking</h3></li></summary>
-</ul>
+
+  <details><summary><h3>Stage I | Volleyball Detection & Tracking</h3></summary>
 
 <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking/model/">
     <img src="https://app.roboflow.com/images/try-model-badge.svg"></img>
@@ -80,13 +77,12 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 </p>
 </details>
-<ul>
-   <li>
+
+<details><summary>
     <h3>
       Stage II | Action Recognition & Player Detection
      </h3>
-   </li>
-</ul>
+   </summary>
         <h4>Action Recognition</h4>
         <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions"><img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img></a>
         <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/model/"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
@@ -101,16 +97,14 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
     <p>
       In progress...
     </p>  
+</details>
 
-<ul>
-   <li>
-    <h3>Stage III | Court Tracking</h3>
-   </li>
-</ul>
 
+<details><summary><h3>Stage III | Court Tracking</h3></summary>
 <p>
   Someday ... 
 </p>
+</details>
 
 <br>
 
@@ -119,7 +113,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 </p>
 
 
-<details><summary><h2>💾 Datasets</h2></summary>
+<h2>💾 Datasets</h2>
 
 | Volleyball | Actions | Players | Court |
 |------|---------|---------|-------|
@@ -151,7 +145,6 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
   </li>
   
 </ul>
-</details>
   
 <details><summary><h2>📝 LICENSE</h2></summary>
 <p>This project is licensed under the <strong>Creative Commons Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND)</strong> license.</p>
