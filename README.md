@@ -13,9 +13,10 @@
   <img src="https://img.shields.io/github/watchers/shukkkur/VolleyVision.svg">
   
   <br>
-  
+<!--   [![License: CC BY-NC-ND 4.0]()]() -->
+
   <img src="https://img.shields.io/github/last-commit/shukkkur/VolleyVision.svg">
-  <img src="https://img.shields.io/badge/License-AGPL_v3-blue.svg">
+  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg"></a>
   <img src="https://hits.sh/github.com/shukkkur/VolleyVision.svg"/>
   <br>
   
@@ -197,6 +198,12 @@ Ball            |  Players |  Court
 ```
 python detect.py --weights best.pt --conf 0.5 --source assets/small
 ```
+  
+<h2>📝 LICENSE</h2>
+<p>Creative Commons Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND) license.</p>
+
+
+<br>
 
 <h3>Acknowledgement</h3>
 
