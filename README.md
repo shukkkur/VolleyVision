@@ -112,9 +112,10 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 <h2>💾 Datasets</h2>
 
-Ball            |  Players |  Court
-:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://github.com/shukkkur/VolleyVision/blob/6ac8230e48de95a8edb3a1c4793657ddb06f1409/README_files/volley-collage.jpg" width="500">  |  ![output_img1](https://github.com/shukkkur/VolleyVision/blob/280fed79d290c1cf6d53c869fa60355eeb04d148/assets/in_progress.jpg) |  ![output_img1](https://github.com/shukkkur/VolleyVision/blob/280fed79d290c1cf6d53c869fa60355eeb04d148/assets/in_progress.jpg)
+| Volleyball | Actions | Players | Court |
+|------|---------|---------|-------|
+| <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking"><img src="https://github.com/shukkkur/VolleyVision/blob/6ac8230e48de95a8edb3a1c4793657ddb06f1409/README_files/volley-collage.jpg" width="600"></a> | <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions"><img src="https://github.com/shukkkur/VolleyVision/blob/f59e9feba6946d6ce7706b8c6b27081461d0401e/assets/actions_collage.png" width="600"></a> | <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset"><img src="https://github.com/shukkkur/VolleyVision/blob/f59e9feba6946d6ce7706b8c6b27081461d0401e/assets/players_collage.png" width="600"></a> | <img src="https://github.com/shukkkur/VolleyVision/blob/280fed79d290c1cf6d53c869fa60355eeb04d148/assets/in_progress.jpg" width="600"> |
+
 
 
 <ul>
@@ -141,17 +142,31 @@ Ball            |  Players |  Court
   </li>
   
 </ul>
-
   
-<h2>📝 LICENSE</h2>
-<p>Creative Commons Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND) license.</p>
+<details><summary><h2>📝 LICENSE</h2></summary>
+<p>This project is licensed under the <strong>Creative Commons Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND)</strong> license.</p>
+<p>This license allows you to:</p>
+<ul>
+    <li><strong>Share</strong> — copy and redistribute the material in any medium or format</li>
+    <li><strong>Adapt</strong> — remix, transform, and build upon the material</li>
+</ul>
+<p>Under the following terms:</p>
+<ul>
+    <li><strong>Attribution</strong> — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li>
+    <li><strong>Non-Commercial</strong> — You may not use the material for commercial purposes.</li>
+    <li><strong>No Derivatives</strong> — If you remix, transform, or build upon the material, you may not distribute the modified material.</li>
+</ul>
+<p>See the full license text for more details.</p>
+<p>
+<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode">Read the full license text</a>
+</p>
+</details>
 
+<details><summary><h2>💖 Sponsor</h2></summary>
+<p>If you find my work useful or interesting, please consider supporting me on <strong><a href="https://ko-fi.com/shukkkur">Ko-fi</a></strong>.</p>
+</details>
 
-<br>
-
-<h3>Acknowledgement</h3>
-
-<details><summary> <b>Expand</b> </summary>
+<details><summary><h2>🙌 Acknowledgement</h2></summary>
   <ul>
     <li>
     This project wouldn't possible without amazing & free RoboFlow <a href="https://roboflow.com/annotate">annotation tools</a> , open-source <a href="https://universe.roboflow.com/">datasets</a>, quick & easy <a href="https://roboflow.com/deploy">deployement</a> and high-level <a href="https://blog.roboflow.com/">blog posts</a></li>
