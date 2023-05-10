@@ -23,17 +23,17 @@
 </p>
 
 
-<h2>🧪 Example usage</h2>
+<details><summary><h2>🧪 Example usage</h2></summary>
 
 Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/main/Stage%20I%20-%20Volleyball/assets)
 :-------------------------:|:-------------------------:
 <img src="https://github.com/shukkkur/VolleyVision/blob/88474342fa4330ce268668986d9f5061d7ee8f6a/assets/y7Detect_volleyball15.gif" width="385" height="250"> | <img src="https://github.com/shukkkur/VolleyVision/blob/eb639742363fb5564d6de4c3b1bf3da808162aa9/assets/rf_backview.gif" width="385" height="250">
 <strong>Action Recognition</strong> | <strong>Players Detection</strong>
 <img src="https://github.com/shukkkur/VolleyVision/blob/1c6c180c445a8be413defac520899e411c07f043/assets/actions.gif" width="385" height="250"> | <img src="https://github.com/shukkkur/VolleyVision/blob/aae563828d54dd16f68c75518e3e3a18c14f2092/assets/players_screen.jpg" width="385" height="250">
+</details>
 
 
-
-<h2>🎯 Objectives</h2>
+<details><summary><h2>🎯 Objectives</h2></summary>
 
 <p>🏐 Learn and apply popular CV techniques to volleyball data
   <br>
@@ -45,11 +45,11 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
   <br>
 
 </p>
+</details>
 
 
 
-
-<h2>📝 About</h2>
+<details><summary><h2>📝 About</h2></summary>
 
 <p><strong>November 7, 2022</strong> | The result of my project should be a web application, that takes a  volleyball video (small sized, single rally) and is able to detect and track the ball, players, the court and is able to provide game statistics.</p>
 
@@ -122,8 +122,9 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 <p>
 <i><strong>For any additional quesitons feel free to <a href="https://github.com/shukkkur/VolleyVision/issues/new">open an issue</a> or <a href="https://github.com/shukkkur#feel-free-to-connectcontact">contact me</a></strong></i>
 </p>
+</details>
 
-<h2>💾 Datasets</h2>
+<details><summary><h2>💾 Datasets</h2></summary>
 
 | Volleyball | Actions | Players | Court |
 |------|---------|---------|-------|
@@ -155,6 +156,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
   </li>
   
 </ul>
+</details>
   
 <details><summary><h2>📝 LICENSE</h2></summary>
 <p>This project is licensed under the <strong>Creative Commons Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND)</strong> license.</p>
