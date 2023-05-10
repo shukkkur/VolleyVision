@@ -19,15 +19,6 @@
   <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg"></a>
   <img src="https://hits.sh/github.com/shukkkur/VolleyVision.svg"/>
   <br>
-  
-  <a href="https://universe.roboflow.com/shakhansho-sabzaliev/volleyball-tracking">
-    <img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img>
-</a>
-<a href="https://universe.roboflow.com/shakhansho-sabzaliev/volleyball-tracking/model/">
-    <img src="https://app.roboflow.com/images/try-model-badge.svg"></img>
-</a>
-
-<br>
   <code>University of Central Asia ⛰️</code>
 </p>
 
@@ -36,6 +27,8 @@
 
 <code>volleyball_15.mp4</code> | <code>back_view.mp4</code>
 :-------------------------:|:-------------------------:
+<img src="https://github.com/shukkkur/VolleyVision/blob/88474342fa4330ce268668986d9f5061d7ee8f6a/assets/y7Detect_volleyball15.gif"> | <img src="https://github.com/shukkkur/VolleyVision/blob/eb639742363fb5564d6de4c3b1bf3da808162aa9/assets/rf_backview.gif">
+<code>volleyball_15.mp4</code> | <code>back_view.mp4</code>
 <img src="https://github.com/shukkkur/VolleyVision/blob/88474342fa4330ce268668986d9f5061d7ee8f6a/assets/y7Detect_volleyball15.gif"> | <img src="https://github.com/shukkkur/VolleyVision/blob/eb639742363fb5564d6de4c3b1bf3da808162aa9/assets/rf_backview.gif">
 
 
