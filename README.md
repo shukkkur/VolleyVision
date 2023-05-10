@@ -83,25 +83,19 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
   <strong>RoboFlow</strong> model is more accurate and works better on official matches, rather than yolov7 model.However, it requires longer time for inference. Whereas, <strong>yoloV7-tiny</strong> is capable of real-time inference but is less accurate but still good for larger volleyballs. I was trying to train the standard <a href="https://github.com/WongKinYiu/yolov7#performance">yolov7</a>, however, with GPU memory being 4GB, I could only afford training with <code>--batch_size=8 --img-size=480</code>, which didn't yield best results.
 
-  
-<!--   https://blog.roboflow.com/new-and-improved-roboflow-train/ -->
 </p>
 
 <ul>
    <li>
     <h3>Stage II | Action Recognition & Player Detection</h3>
-     
+   </li>
+</ul>
       <ul>
-        
         <h4>Action Recognition</h4>
         <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions"><img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img></a>
         <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/model/"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
-        <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/weights/actions/yV8_medium/weights"><img src="https://img.shields.io/badge/Download-Model%20Weights-blue" alt="yV8 Weights"></a>
-
+        <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/weights/actions/yV8_medium/weights"><img src="https://img.shields.io/badge/Download-YOLOV8%20Weights-red" alt="yV8 Weights"></a>
       </ul>
-     
-   </li>
-</ul>
 
 <p>
   In progress...
@@ -230,3 +224,5 @@ V Extra blank line below!
 -->
 
 <!-- <img src="https://github.com/shukkkur/VolleyVision/blob/2e4ce97819f591573de99fcfe04ba0f0259dff9a/assets/rf_men_rally.gif" width="350" height="250"> | <img src="https://github.com/shukkkur/VolleyVision/blob/2e4ce97819f591573de99fcfe04ba0f0259dff9a/assets/rf_women_rally.gif" width="350" height="250"> -->
+
+<!--   https://blog.roboflow.com/new-and-improved-roboflow-train/ -->
