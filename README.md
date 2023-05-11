@@ -29,7 +29,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 :-------------------------:|:-------------------------:
 <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20I%20-%20Volleyball/weights/weights"><img src="https://github.com/shukkkur/VolleyVision/blob/88474342fa4330ce268668986d9f5061d7ee8f6a/assets/y7Detect_volleyball15.gif" width="385" height="250"></a> | <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20I%20-%20Volleyball/weights/weights"><img src="https://github.com/shukkkur/VolleyVision/blob/eb639742363fb5564d6de4c3b1bf3da808162aa9/assets/rf_backview.gif" width="385" height="250"></a>
 <strong>Action Recognition</strong> | <strong>Players Detection</strong>
-<a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/weights/actions/yV8_medium/weights"><img src="https://github.com/shukkkur/VolleyVision/blob/1c6c180c445a8be413defac520899e411c07f043/assets/actions.gif" width="385" height="250"></a> | <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/weights/players/yV8_large/weights"><img src="https://github.com/shukkkur/VolleyVision/blob/aae563828d54dd16f68c75518e3e3a18c14f2092/assets/players_screen.jpg" width="385" height="250"></a>
+<a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/weights/actions/yV8_medium/weights"><img src="https://github.com/shukkkur/VolleyVision/blob/1c6c180c445a8be413defac520899e411c07f043/assets/actions.gif" width="385" height="250"></a> | <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/weights/players/yV8_medium/weights"><img src="https://github.com/shukkkur/VolleyVision/blob/aae563828d54dd16f68c75518e3e3a18c14f2092/assets/players_screen.jpg" width="385" height="250"></a>
 
 
 <h2>🎯 Objectives</h2>
@@ -48,10 +48,10 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 <h2>📝 About</h2>
 
-<p><strong>November 7, 2022</strong> | The result of my project should be a web application, that takes a  volleyball video (small sized, single rally) and is able to detect and track the ball, players, the court and is able to provide game statistics.</p>
+<p><strong>November 7, 2022</strong> | The result of my project should be a web application, that takes a  volleyball video  and is able to detect and track the ball, players, the court and provides game statistics.</p>
 
 
-  <details><summary><h3>Stage I | Volleyball Detection & Tracking</h3></summary>
+<details><summary><h3>Stage I | Volleyball Detection & Tracking</h3></summary>
 
 <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking/model/">
     <img src="https://app.roboflow.com/images/try-model-badge.svg"></img>
@@ -74,8 +74,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 |**precision** |    86.4%    |   94.7%  |
 |**recall**    |    65.8%    |   86.1%  |
 
-  <strong>RoboFlow</strong> model is more accurate and works better on official matches, rather than yolov7 model.However, it requires longer time for inference. Whereas, <strong>yoloV7-tiny</strong> is capable of real-time inference but is less accurate but still good for larger volleyballs. I was trying to train the standard <a href="https://github.com/WongKinYiu/yolov7#performance">yolov7</a>, however, with GPU memory being 4GB, I could only afford training with <code>batch_size=8 img-size=480</code>, which didn't yield best results.
-</p>
+  <strong>RoboFlow</strong> model is more accurate and works better on official matches, rather than yolov7 model. However, it requires longer time for inference. <strong>YoloV7-tiny</strong> is capable of real-time inference, even though it is less accurate than RoboFlow model, it is still a good and fast choice for larger volleyballs.</p>
 </details>
 
 <details><summary><h3>Stage II | Action Recognition & Player Detection</h3></summary>
@@ -91,7 +90,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset"><img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img></a>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset/model/"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
     <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/weights/players/yV8_large/weights"><img src="https://img.shields.io/badge/Download-YOLOV8L%20Weights-red" alt="yV8 Weights"></a>
-     <a href="https://wandb.ai/volleyvision/YOLOv8/runs/2t3qtrhe/overview?workspace=user-shukkkur"><img src="https://raw.githubusercontent.com/wandb/assets/main/wandb-github-badge-gradient.svg" alt="WandB Badge"></a>
+     <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/weights/players/yV8_medium"><img src="https://raw.githubusercontent.com/wandb/assets/main/wandb-github-badge-gradient.svg" alt="WandB Badge"></a>
     <p>
       In progress...
     </p>  
@@ -219,3 +218,5 @@ V Extra blank line below!
 <!-- <img src="https://github.com/shukkkur/VolleyVision/blob/2e4ce97819f591573de99fcfe04ba0f0259dff9a/assets/rf_men_rally.gif" width="350" height="250"> | <img src="https://github.com/shukkkur/VolleyVision/blob/2e4ce97819f591573de99fcfe04ba0f0259dff9a/assets/rf_women_rally.gif" width="350" height="250"> -->
 
 <!--   https://blog.roboflow.com/new-and-improved-roboflow-train/ -->
+
+<!-- I was trying to train the standard <a href="https://github.com/WongKinYiu/yolov7#performance">yolov7</a>, however, with GPU memory being 4GB, I could only afford training with <code>batch_size=8 img-size=480</code>, which didn't yield best results. -->
