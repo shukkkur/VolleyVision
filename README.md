@@ -162,11 +162,12 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
   </li>
   
   <li>
-    <a href="https://www.tugraz.at/index.php?id=17751">Spatiotemporal Volleyball Activtiy Dataset</a> (7 classes: defense-move, attack, block, reception, service, setting, stand). <br>This dataset belongs to Institute of Computer Graphics and Vision, I downloaded the annotations and the videos from the website, did all the preprocessing and uploaded it to RoboFlow, to make it more accessible and convinient for others to download. The only limiation is that RoboFlow splitted it randomly into train/test/split. Therefore, after downloading the images and annotations, they should  combined and then a sequential split should be performed. 
+    <a href="https://www.tugraz.at/index.php?id=17751">Spatiotemporal Volleyball Activtiy Dataset</a> (7 classes: defense-move, attack, block, reception, service, setting, stand).
     <ul>
       <li>Source Images - <a href="https://universe.roboflow.com/shukur-sabzaliev-zc3en/volleyball-activity-dataset/dataset/3">original</a></li>
       <li>Resized (640x640) - <a href="https://universe.roboflow.com/shukur-sabzaliev-zc3en/volleyball-activity-dataset/dataset/4">resized_640</a></li>
     </ul>
+    <p>This dataset belongs to Institute of Computer Graphics and Vision, I downloaded the annotations and the videos from the website, did all the preprocessing and uploaded it to RoboFlow, to make it more accessible and convinient for others to download. The only limiation is that RoboFlow splitted it randomly into train/test/split. Therefore, after downloading the images and annotations, they should  combined and then a sequential split should be performed. </p>
   </li>
 
   <li>
