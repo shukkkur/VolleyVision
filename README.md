@@ -51,7 +51,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 <p><strong>November 7, 2022</strong> | The result of my project should be a web application, that takes a  volleyball video  and is able to detect and track the ball, players, the court and provides game statistics.</p>
 
 
-<details><summary><h3>Stage I | Volleyball Detection & Tracking</h3></summary>
+<details><summary><h3>Volleyball Detection & Tracking</h3></summary>
 
 <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking/model/"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
 <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking"><img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img></a>
@@ -72,9 +72,16 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 
   <strong>RoboFlow</strong> model is more accurate and works better on official matches, rather than yolov7 model. However, it requires longer time for inference. <strong>YoloV7-tiny</strong> is capable of real-time inference, even though it is less accurate than RoboFlow model, it is still a good and fast choice for larger volleyballs.</p>
+
+<h4>🏃‍♂️ How to Run</h4>
+<ul>
+  <li>
+  <p><strong>Check out the <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20I%20-%20Volleyball#readme">Stage I - Volleyball/README.md</a></strong></p>
+  </li>
+</ul>
 </details>
 
-<details><summary><h3>Stage II | Action Recognition & Player Detection</h3></summary>
+<details><summary><h3>Player Detection & Action Recognition</h3></summary>
     <h4>Action Recognition</h4>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions"><img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img></a>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/model/3"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
@@ -90,9 +97,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 | RoboFlow   |  83.7%     | 78.5%      | 82.3%         |
 
 <p>The results were highly promising, as shown by the performance metrics.</p>
-
-
-
+<br>
 <h4>Players Detection</h4>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset"><img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img></a>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset/model/"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
@@ -107,10 +112,17 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 | RoboFlow   |  97.2%     | 96.7%      | 91.7%         |
 
 <p>However, it's worth noting that the model may occasionally misidentify coaches as players.</p>
+
+<h4>🏃‍♂️ How to Run</h4>
+<ul>
+  <li>
+  <p><strong>Check out the <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions#readme">Stage II - Players & Actions/README.md</a></strong></p>
+  </li>
+</ul>
 </details>
 
 
-<details><summary><h3>Stage III | Court Tracking</h3></summary>
+<details><summary><h3>Court Tracking</h3></summary>
 <p>
   Someday ... 
 </p>
