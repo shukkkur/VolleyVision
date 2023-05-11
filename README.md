@@ -78,7 +78,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
     <h4>Action Recognition</h4>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions"><img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img></a>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/model/3"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
-    <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/actions/yV8_medium"><img src="https://img.shields.io/badge/Download-YOLOV8M%20Weights-red" alt="yV8 Weights"></a>
+    <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/actions/yV8_medium/"><img src="https://img.shields.io/badge/Download-YOLOV8M%20Weights-red" alt="yV8 Weights"></a>
     <a href="https://wandb.ai/volleyvision/YOLOv8/runs/28bs84bi/overview?workspace=user-shukkkur"><img src="https://raw.githubusercontent.com/wandb/assets/main/wandb-github-badge-gradient.svg" alt="WandB Badge"></a>
     <p>
   In this stage, I focused on recognizing volleyball actions from the images. A comprehensive <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions">volleyball actions dataset</a> was created, comprising <strong>14k images</strong>. I used <a href="https://github.com/ultralytics/ultralytics/tree/0cb87f7dd340a2611148fbf2a0af59b544bd7b1b#models">YOLOv8m</a> to train the action recognition model on this dataset. The results were highly promising, as shown by the following performance metrics:
@@ -93,8 +93,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
   <h4>Players Detection</h4>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset"><img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img></a>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset/model/"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
-    <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/players/yV8_medium"><img src="https://img.shields.io/badge/Download-YOLOV8L%20Weights-red" alt="yV8 Weights"></a>
-     <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/weights/players/yV8_medium"><img src="https://raw.githubusercontent.com/wandb/assets/main/wandb-github-badge-gradient.svg" alt="WandB Badge"></a>
+    <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/actions/yV8_medium"><img src="https://img.shields.io/badge/Download-YOLOV8L%20Weights-red" alt="yV8 Weights"></a>
     <p>
       In progress...
     </p>  
