@@ -109,7 +109,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 | yolov8m    | 97.2%    | 94.2%        | 94%         |
 | RoboFlow   |  97.2%     | 96.7%      | 91.7%         |
 
-<p>However, it's worth noting that the model may occasionally misidentify coaches as players.</p>
+<p>However, it's worth noting that the yolov8 model, being able to perform in real-time, may occasionally misidentify coaches as players, whereas the RoboFlow model will have a higher rate of <strong>false negatives</strong>, resulting in missed player detections.</p>
 
 <h3>🏃‍♂️ How to Run</h3>
 <ul>
