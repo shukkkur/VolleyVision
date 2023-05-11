@@ -35,7 +35,7 @@
   Let us test on <a href="https://github.com/shukkkur/VolleyVision/blob/a87326441528ee89f4d23a81e2461d6963534134/assets/rally_men.mp4">assets/rally_men.mp4</a>. It's a 5 seconds video that weights about 5.2 MB.
   
   <li>
-    If you want to get <strong>fast results</strong>, use <code>volley_track.py</code> which utilizes a model in combination with DaSiamRPN tracker
+    If you want to get <strong>fast results</strong>, use <strong>volley_track.py</strong> which utilizes a model in combination with DaSiamRPN tracker
   </li>
   
   ```
@@ -43,7 +43,7 @@
   ```
   
   <li>
-    Elif <strong>accuracy</strong> is what you are after, use <code>volley_detect.py</code>. It calls the model on every frame.
+    Elif <strong>accuracy</strong> is what you are after, use <strong>volley_detect.py</strong>. It calls the model on every frame.
   </li>
   
   ```
@@ -51,16 +51,28 @@
   ```
   
   
-  <code>volley_track.py</code>  | <code>volley_detect.py</code>
+<strong>volley_track.py</strong>  | <strong>volley_detect.py</strong>
 :-------------------------:|:-------------------------:
 <img src="https://github.com/shukkkur/VolleyVision/blob/914b8dc3873767b7b1a1c62b7b75633d8a3a9af6/assets/track_men.gif"> | <img src="https://github.com/shukkkur/VolleyVision/blob/280fed79d290c1cf6d53c869fa60355eeb04d148/assets/rf_men_rally.gif">
 
-  <i>Note that, it took <code>volley_track.py</code> <strong>0.73</strong> minutes to process the video, whereas <code>volley_dtect.py</code> completed in <strong>2.75 minutes</strong>.</i>
+  <i>Note that, it took <code>volley_track.py</code> <strong>0.73</strong> minutes to process the video, whereas <strong>volley_detect.py</strong> completed in <strong>2.75 minutes</strong>.</i>
 
 <li>
-  If you are interested in running the models on individual frames, for <code>roboflow</code> use this <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/model/13">API</a>. And for <code>yolov7-tiny</code> run the following line with <code>--source</code> being your image, folder with images or even video.
+  If you are interested in running the models on individual frames, for <code>roboflow</code> use this <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking/model/18">API</a>. And for <code>yolov7</code> run the following line with <code>--source</code> being your image, folder with images or even video.
 </li>
 
 ```
 python detect.py --weights best.pt --conf 0.5 --source assets/small
 ```
+
+<ul>
+  <li>
+    <p>You can get all list or arguments using the following command:</p>
+  </li>
+</ul>
+
+```python
+python volley_track.py -h
+```
+
+<img src="https://github.com/shukkkur/VolleyVision/blob/d24f2bd82847d61841085d45ae4a5dd491376ece/Stage%20I%20-%20Volleyball/assets/args.png">
