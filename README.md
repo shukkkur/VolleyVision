@@ -130,7 +130,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 | Volleyball | Actions | Players | Spatiotemporal Activity |
 |------|---------|---------|-------|
-| <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking"><img src="https://github.com/shukkkur/VolleyVision/blob/6ac8230e48de95a8edb3a1c4793657ddb06f1409/README_files/volley-collage.jpg" width="600"></a> | <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions"><img src="https://github.com/shukkkur/VolleyVision/blob/f59e9feba6946d6ce7706b8c6b27081461d0401e/assets/actions_collage.png" width="600"></a> | <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset"><img src="https://github.com/shukkkur/VolleyVision/blob/f59e9feba6946d6ce7706b8c6b27081461d0401e/assets/players_collage.png" width="600"></a> | <img src="https://github.com/shukkkur/VolleyVision/blob/10da824026eafd787f85c0a4d9e88d6259c31a72/assets/3d_activity.png" width="600"> |
+| <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking"><img src="https://github.com/shukkkur/VolleyVision/blob/6ac8230e48de95a8edb3a1c4793657ddb06f1409/README_files/volley-collage.jpg" width="600"></a> | <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions"><img src="https://github.com/shukkkur/VolleyVision/blob/f59e9feba6946d6ce7706b8c6b27081461d0401e/assets/actions_collage.png" width="600"></a> | <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset"><img src="https://github.com/shukkkur/VolleyVision/blob/f59e9feba6946d6ce7706b8c6b27081461d0401e/assets/players_collage.png" width="600"></a> | <img src="https://github.com/shukkkur/VolleyVision/blob/10da824026eafd787f85c0a4d9e88d6259c31a72/assets/3d_activity.png" width="465"> |
 
 <details><summary><i>details</i></h2></summary>
 <ul>
@@ -139,7 +139,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
     <ul>
       <li>Source Images - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/9">25k_version</a></li>
       <li>Resized (640x640) - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/13">25_version_640</a></li>
-      <li>Resized (800x800) - <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking/dataset/18">25_version_640</a></li>
+      <li>Resized (800x800) - <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking/dataset/18">800_by_800_version</a></li>
     </ul>
   </li>
   
