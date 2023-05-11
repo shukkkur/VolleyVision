@@ -46,7 +46,6 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 </p>
 
 
-
 <h2>📝 About</h2>
 
 <p><strong>November 7, 2022</strong> | The result of my project should be a web application, that takes a  volleyball video (small sized, single rally) and is able to detect and track the ball, players, the court and is able to provide game statistics.</p>
@@ -60,20 +59,22 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking">
     <img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img>
 </a>
-<p>
+<a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20I%20-%20Volleyball/weights/weights"><img src="https://img.shields.io/badge/Download-YOLOV7--TINY%20Weights-red" alt="yV8 Weights"></a>
+<a href="https://wandb.ai/volleyvision/YOLOR/runs/2u30vyzp/overview?workspace=user-"><img src="https://raw.githubusercontent.com/wandb/assets/main/wandb-github-badge-gradient.svg" alt="WandB Badge"></a>
+
 <!--   <strong>February 10, 2023 </strong> -->
 <!--    <i>Closing the first stage moderetly satisfied</i>.  -->
 <!--   <br> -->
-  Two trained models: <a href="https://blog.roboflow.com/new-and-improved-roboflow-train/">RoboFlow</a> (<a href="https://docs.roboflow.com/train">AutoML training</a>) and <a href="https://github.com/WongKinYiu/yolov7">yoloV7-tiny</a> (local training). Both were trained on my newly created <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/13">dataset</a> comprised of <strong>25k</strong> images of size <strong>640x640</strong>.  As for the tracker, <a href="https://github.com/foolwood/DaSiamRPN">DaSiamRPN</a> (<a href="https://docs.opencv.org/4.x/de/d93/classcv_1_1TrackerDaSiamRPN.html">cv2</a>) was used. If you are interested in the yolov7-tiny training process check out - <a href="https://wandb.ai/volleyvision/YOLOR/runs/2u30vyzp/overview?workspace=user-">wandb.ai</a>.
+
+<p>Two trained models: <a href="https://blog.roboflow.com/new-and-improved-roboflow-train/">RoboFlow</a> (<a href="https://docs.roboflow.com/train">AutoML training</a>) and <a href="https://github.com/WongKinYiu/yolov7">yoloV7-tiny</a> (local training). Both were trained on my newly created <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/13">dataset</a> comprised of <strong>25k</strong> images.  As for the tracker, <a href="https://github.com/foolwood/DaSiamRPN">DaSiamRPN</a> (<a href="https://docs.opencv.org/4.x/de/d93/classcv_1_1TrackerDaSiamRPN.html">cv2</a>) was used.
   
-|          | yoloV7-tiny | RoboFlow |
-|:--------:|:-----------:|:--------:|
+|              | yoloV7-tiny | RoboFlow |
+|:------------:|:----------:|:---------:|
 |**mAP**       |    74.1%    |   92.3%  |
 |**precision** |    86.4%    |   94.7%  |
 |**recall**    |    65.8%    |   86.1%  |
 
-  <strong>RoboFlow</strong> model is more accurate and works better on official matches, rather than yolov7 model.However, it requires longer time for inference. Whereas, <strong>yoloV7-tiny</strong> is capable of real-time inference but is less accurate but still good for larger volleyballs. I was trying to train the standard <a href="https://github.com/WongKinYiu/yolov7#performance">yolov7</a>, however, with GPU memory being 4GB, I could only afford training with <code>--batch_size=8 --img-size=480</code>, which didn't yield best results.
-
+  <strong>RoboFlow</strong> model is more accurate and works better on official matches, rather than yolov7 model.However, it requires longer time for inference. Whereas, <strong>yoloV7-tiny</strong> is capable of real-time inference but is less accurate but still good for larger volleyballs. I was trying to train the standard <a href="https://github.com/WongKinYiu/yolov7#performance">yolov7</a>, however, with GPU memory being 4GB, I could only afford training with <code>batch_size=8 img-size=480</code>, which didn't yield best results.
 </p>
 </details>
 
