@@ -60,6 +60,7 @@
 <li>
   If you are interested in running the models on individual frames, for <code>roboflow</code> use this <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking/model/18">API</a>. And for <code>yolov7</code> run the following line with <code>--source</code> being your image, folder with images or even video.
 </li>
+</ol>
 
 ```
 python detect.py --weights best.pt --conf 0.5 --source assets/small
