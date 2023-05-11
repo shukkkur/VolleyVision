@@ -7,7 +7,7 @@
 </h1>
 
 <p align='center'>
-  <code>University of Central Asia ⛰️</code>
+  <a href="https://ucentralasia.org/home"><code>University of Central Asia</a>⛰️</code>
 </p>
 
 <h2>🏃‍♂️ How to Run</h2>
@@ -27,14 +27,15 @@
   </li>
   
   ```
-  cd VolleyVision
+  cd VolleyVision\Stage I - Volleyball
   pip install -r requirements.txt
   ```
+  <h3 align="center"><code>MODELS</code><br><code>yolov7 - fast | roboflow - accurate</code></h3>
   
-  Let's test on <a href="https://github.com/shukkkur/VolleyVision/blob/a87326441528ee89f4d23a81e2461d6963534134/assets/rally_men.mp4">assets/rally_men.mp4</a>. It's a <strong>5 seconds video that weights about 5.2 MB</strong>
+  Let us test on <a href="https://github.com/shukkkur/VolleyVision/blob/a87326441528ee89f4d23a81e2461d6963534134/assets/rally_men.mp4">assets/rally_men.mp4</a>. It's a 5 seconds video that weights about 5.2 MB.
   
   <li>
-    If you want to get <strong>faster results</strong>, than use <code>volley_track.py</code> which utilizes a model in combination with DaSiamRPN tracker
+    If you want to get <strong>fast results</strong>, use <code>volley_track.py</code> which utilizes a model in combination with DaSiamRPN tracker
   </li>
   
   ```
