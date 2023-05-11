@@ -132,24 +132,34 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 |------|---------|---------|-------|
 | <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking"><img src="https://github.com/shukkkur/VolleyVision/blob/6ac8230e48de95a8edb3a1c4793657ddb06f1409/README_files/volley-collage.jpg" width="600"></a> | <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions"><img src="https://github.com/shukkkur/VolleyVision/blob/f59e9feba6946d6ce7706b8c6b27081461d0401e/assets/actions_collage.png" width="600"></a> | <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset"><img src="https://github.com/shukkkur/VolleyVision/blob/f59e9feba6946d6ce7706b8c6b27081461d0401e/assets/players_collage.png" width="600"></a> | <img src="https://github.com/shukkkur/VolleyVision/blob/280fed79d290c1cf6d53c869fa60355eeb04d148/assets/in_progress.jpg" width="600"> |
 
-
-
 <ul>
   <li>
-  <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true">Volleyball</a> (1 class, annotated)
-  <ul>
-    <li>Source Images - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/9">25k_version</a></li>
-    <li>Source Images (640x640) - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/13">25k_resized</a></li>
-  </ul>
+    <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking">Volleyball</a> (1 class: volleyball)
+    <ul>
+      <li>Source Images - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/9">25k_version</a></li>
+      <li>Resized (640x640) - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/13">25_version_640</a></li>
+      <li>Resized (800x800) - <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking/dataset/18">25_version_640</a></li>
+    </ul>
   </li>
   
   <li>
-  Players
-  <ul>
-    <li>In Progress...</li>
-  </ul>
+    <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions">Actions (5 classes: block, defense, serve, set, spike)</a>
+    <ul>
+      <li>Source Images - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/5">original</a></li>
+      <li>Resized (640x640) - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/3">resized_640</a></li>
+      <li>Resized (1024x1024) - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/4">stretched_dataset</a></li>
+    </ul>
   </li>
   
+  <li>
+    <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset">Players (1 class: player)</a>
+  <ul>
+    <li>Source Images - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/5">original</a></li>
+    <li>Resized (640x640) - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/3">resized_640</a></li>
+    <li>Resized (1024x1024) - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/4">stretched_dataset</a></li>
+  </ul>
+  </li>
+
   <li>
     Court
     <ul>
