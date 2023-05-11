@@ -132,7 +132,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 |------|---------|---------|-------|
 | <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking"><img src="https://github.com/shukkkur/VolleyVision/blob/6ac8230e48de95a8edb3a1c4793657ddb06f1409/README_files/volley-collage.jpg" width="600"></a> | <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions"><img src="https://github.com/shukkkur/VolleyVision/blob/f59e9feba6946d6ce7706b8c6b27081461d0401e/assets/actions_collage.png" width="600"></a> | <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset"><img src="https://github.com/shukkkur/VolleyVision/blob/f59e9feba6946d6ce7706b8c6b27081461d0401e/assets/players_collage.png" width="600"></a> | <img src="https://github.com/shukkkur/VolleyVision/blob/10da824026eafd787f85c0a4d9e88d6259c31a72/assets/3d_activity.png" width="465"> |
 
-<details><summary><i>details</i></h2></summary>
+<details><summary><i>datasets' details</i></h2></summary>
 <ul>
   <li>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking">Volleyball</a> (1 class: volleyball)
@@ -162,7 +162,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
   </li>
   
   <li>
-    <a href="https://www.tugraz.at/index.php?id=17751">Spatiotemporal Volleyball Activtiy Dataset</a> (7 classes: defense-move, attack, block, reception, service, setting, stand)
+    <a href="https://www.tugraz.at/index.php?id=17751">Spatiotemporal Volleyball Activtiy Dataset</a> (7 classes: defense-move, attack, block, reception, service, setting, stand). <br>This dataset belongs to Institute of Computer Graphics and Vision, I downloaded the annotations and the videos from the website, did all the preprocessing and uploaded it to RoboFlow, to make it more accessible and convinient for others to download. The only limiation is that RoboFlow splitted it randomly into train/test/split. Therefore, after downloading the images and annotations, they should  combined and then a sequential split should be performed. 
     <ul>
       <li>Source Images - <a href="https://universe.roboflow.com/shukur-sabzaliev-zc3en/volleyball-activity-dataset/dataset/3">original</a></li>
       <li>Resized (640x640) - <a href="https://universe.roboflow.com/shukur-sabzaliev-zc3en/volleyball-activity-dataset/dataset/4">resized_640</a></li>
