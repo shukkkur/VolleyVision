@@ -36,9 +36,9 @@
   </li>
 
 
-|   <code>yolo predict model=actions\yV8_medium\weights\best.pt source=assets\players.jpg show_conf=False show_labels=False</code>   |   <code>yolo predict model=actions\yV8_medium\weights\best.pt source=assets\players.jpg show_conf=False show_labels=False</code>   |
+|   <code>actions\yV8_medium\weights\best.pt</code>   |   <code>players\yV8_medium\weights\best.pt</code>   |
 |--------------|--------------|
-|  ![Image 1](https://github.com/shukkkur/VolleyVision/blob/bd87bc614df0c6a2b38067b9d7e0c3a7603a4a65/Stage%20II%20-%20Players%20%26%20Actions/assets/out_actions.jpg)  |  ![Image 1](https://github.com/shukkkur/VolleyVision/blob/bd87bc614df0c6a2b38067b9d7e0c3a7603a4a65/Stage%20II%20-%20Players%20%26%20Actions/assets/out_actions.jpg)  |
+|  <img src="https://github.com/shukkkur/VolleyVision/blob/bd87bc614df0c6a2b38067b9d7e0c3a7603a4a65/Stage%20II%20-%20Players%20%26%20Actions/assets/out_actions.jpg" width="500">  |  <img src="https://github.com/shukkkur/VolleyVision/blob/b532943613057c9bc99f309434d622c2030235ad/Stage%20II%20-%20Players%20%26%20Actions/assets/out_players.jpg" width="500">  |
 
  
 
