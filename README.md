@@ -74,7 +74,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 <h2>🏃‍♂️ How to Run</h2>
 <ul>
   <li>
-  <p><strong>Check out the <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20I%20-%20Volleyball#readme">Stage I - Volleyball/README.md</a></strong></p>
+  <p>Check out the <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20I%20-%20Volleyball#readme">Stage I - Volleyball/README.md</a></p>
   </li>
 </ul>
 </details>
@@ -114,7 +114,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 <h2>🏃‍♂️ How to Run</h2>
 <ul>
   <li>
-  <p><strong>Check out the <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions#readme">Stage II - Players & Actions/README.md</a></strong></p>
+  <p>Check out the <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions#readme">Stage II - Players & Actions/README.md</a></p>
   </li>
 </ul>
 </details>
