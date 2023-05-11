@@ -143,7 +143,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
   </li>
   
   <li>
-    <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions">Actions (5 classes: block, defense, serve, set, spike)</a>
+    <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions">Actions</a> (5 classes: block, defense, serve, set, spike)
     <ul>
       <li>Source Images - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/5">original</a></li>
       <li>Resized (640x640) - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/3">resized_640</a></li>
@@ -153,11 +153,19 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
   
   <li>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset">Players (1 class: player)</a>
-  <ul>
-    <li>Source Images - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/5">original</a></li>
-    <li>Resized (640x640) - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/3">resized_640</a></li>
-    <li>Resized (1024x1024) - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/4">stretched_dataset</a></li>
-  </ul>
+    <ul>
+      <li>Source Images - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/5">original</a></li>
+      <li>Resized (640x640) - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/3">resized_640</a></li>
+      <li>Resized (1024x1024) - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/4">stretched_dataset</a></li>
+    </ul>
+  </li>
+  
+  <li>
+    <a href="https://www.tugraz.at/index.php?id=17751">Spatiotemporal Volleyball Activtiy Dataset</a> (7 classes: defense-move, attack, block, reception, service, setting, stand)
+    <ul>
+      <li>Source Images - <a href="https://universe.roboflow.com/shukur-sabzaliev-zc3en/volleyball-activity-dataset/dataset/3">original</a></li>
+      <li>Resized (640x640) - <a href="https://universe.roboflow.com/shukur-sabzaliev-zc3en/volleyball-activity-dataset/dataset/4">resized_640</a></li>
+    </ul>
   </li>
 
   <li>
