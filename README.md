@@ -216,7 +216,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 <details><summary><h2>📞 Contact</h2></summary>
 
 <p>
-<i><strong>For any additional quesitons feel free to <a href="https://github.com/shukkkur/VolleyVision/issues/new">open an issue</a> or <a href="https://github.com/shukkkur#feel-free-to-connectcontact">contact me</a></strong></i>
+<i><strong>For any additional quesitons feel free to take part in <a href="https://github.com/shukkkur/VolleyVision/discussions">discussions</a>, open an <a href="https://github.com/shukkkur/VolleyVision/issues/new">issue</a> or <a href="https://github.com/shukkkur#feel-free-to-connectcontact">contact</a> me</strong></i>
 </p>
 </details>
 
