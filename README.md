@@ -71,7 +71,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
   <strong>RoboFlow</strong> model is more accurate and works better on official matches, rather than yolov7 model. However, it requires longer time for inference. <strong>YoloV7-tiny</strong> is capable of real-time inference, even though it is less accurate than RoboFlow model, it is still a good and fast choice for larger volleyballs.</p>
 
-<h3>🏃‍♂️ How to Run</h3>
+<h2>🏃‍♂️ How to Run</h2>
 <ul>
   <li>
   <p><strong>Check out the <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20I%20-%20Volleyball#readme">Stage I - Volleyball/README.md</a></strong></p>
@@ -111,7 +111,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 <p>However, it's worth noting that the yolov8 model, being able to perform in real-time, may occasionally misidentify coaches as players, whereas the RoboFlow model will have a higher rate of <strong>false negatives</strong>, resulting in missed player detections.</p>
 
-<h3>🏃‍♂️ How to Run</h3>
+<h2>🏃‍♂️ How to Run</h2>
 <ul>
   <li>
   <p><strong>Check out the <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions#readme">Stage II - Players & Actions/README.md</a></strong></p>
