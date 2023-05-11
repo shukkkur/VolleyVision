@@ -62,7 +62,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 <!--    <i>Closing the first stage moderetly satisfied</i>.  -->
 <!--   <br> -->
 
-<p>Two trained models: <a href="https://blog.roboflow.com/new-and-improved-roboflow-train/">RoboFlow</a> (<a href="https://docs.roboflow.com/train">AutoML training</a>) and <a href="https://github.com/WongKinYiu/yolov7">yoloV7-tiny</a> (local training). Both were trained on my newly created <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/13">dataset</a> comprised of <strong>25k images</strong>.  As for the tracker, <a href="https://github.com/foolwood/DaSiamRPN">DaSiamRPN</a> (<a href="https://docs.opencv.org/4.x/de/d93/classcv_1_1TrackerDaSiamRPN.html">cv2</a>) was used.
+<p>Two trained models: <a href="https://blog.roboflow.com/new-and-improved-roboflow-train/">RoboFlow</a> (<a href="https://docs.roboflow.com/train">AutoML training</a>) and <a href="https://github.com/WongKinYiu/yolov7">yoloV7-tiny</a> (local training). Both were trained on my newly created dataset comprised of <strong>25k images</strong>.  As for the tracker, <a href="https://github.com/foolwood/DaSiamRPN">DaSiamRPN</a> (<a href="https://docs.opencv.org/4.x/de/d93/classcv_1_1TrackerDaSiamRPN.html">cv2</a>) was used.
 
 |              |   **mAP(50)**   | **precision** |  **recall**  |
 |:------------:|:-----------:|:-------------:|:------------:|
@@ -81,7 +81,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
     <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/actions/yV8_medium/"><img src="https://img.shields.io/badge/Download-YOLOV8M%20Weights-red" alt="yV8 Weights"></a>
     <a href="https://wandb.ai/volleyvision/YOLOv8/runs/28bs84bi/overview?workspace=user-shukkkur"><img src="https://raw.githubusercontent.com/wandb/assets/main/wandb-github-badge-gradient.svg" alt="WandB Badge"></a>
     <p>
-  In this stage, I focused on recognizing volleyball actions from the images. A comprehensive <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions">volleyball actions dataset</a> was created, comprising <strong>14k images</strong>. I used <a href="https://github.com/ultralytics/ultralytics/tree/0cb87f7dd340a2611148fbf2a0af59b544bd7b1b#models">YOLOv8m</a> to train the action recognition model on this dataset. The results were highly promising, as shown by the following performance metrics:
+  In this stage, I focused on recognizing volleyball actions from the images. A comprehensive volleyball actions dataset was created, comprising <strong>14k images</strong>. I used <a href="https://github.com/ultralytics/ultralytics/tree/0cb87f7dd340a2611148fbf2a0af59b544bd7b1b#models">YOLOv8m</a> to train the action recognition model on this dataset.
 </p>  
 
 |            | **mAP50(B)**   | **precision**   | **recall**      |
@@ -89,14 +89,24 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 | yolov8m    | 92.31%     | 92.38%         | 89.4%         |
 | RoboFlow   |  83.7%     | 78.5%      | 82.3%         |
 
-  
-  <h4>Players Detection</h4>
+<p>The results were highly promising, as shown by the performance metrics.</p>
+
+
+
+<h4>Players Detection</h4>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset"><img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img></a>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset/model/"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
-    <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/actions/yV8_medium"><img src="https://img.shields.io/badge/Download-YOLOV8L%20Weights-red" alt="yV8 Weights"></a>
+    <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/actions/yV8_medium"><img src="https://img.shields.io/badge/Download-YOLOV8M%20Weights-red" alt="yV8 Weights"></a>
     <p>
-      In progress...
+    In addition, I have also trained a YOLOv8m model on a dataset of volleyball players, achieving a high level of accuracy in detecting players in each frame:
     </p>  
+    
+|            | **mAP50(B)**   | **precision**   | **recall**      |
+|:----------:|:----------:|:----------------:|:----------------:|
+| yolov8m    | 97.2%    | 94.2%        | 94%         |
+| RoboFlow   |  97.2%     | 96.7%      | 91.7%         |
+
+<p>However, it's worth noting that the model may occasionally misidentify coaches as players.</p>
 </details>
 
 
