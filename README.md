@@ -85,9 +85,9 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/model/3"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
     <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/actions/yV8_medium/"><img src="https://img.shields.io/badge/Download-YOLOV8M%20Weights-red" alt="yV8 Weights"></a>
     <a href="https://wandb.ai/volleyvision/YOLOv8/runs/28bs84bi/overview?workspace=user-shukkkur"><img src="https://raw.githubusercontent.com/wandb/assets/main/wandb-github-badge-gradient.svg" alt="WandB Badge"></a>
-    <p>
-  In this stage, I focused on recognizing volleyball actions from the images. A comprehensive volleyball actions dataset was created, comprising <strong>14k images</strong>. I used <a href="https://github.com/ultralytics/ultralytics/tree/0cb87f7dd340a2611148fbf2a0af59b544bd7b1b#models">YOLOv8m</a> to train the action recognition model on this dataset.
-</p>  
+  <p>
+    In this stage, I focused on recognizing volleyball actions from the images. A comprehensive volleyball actions dataset was created, comprising <strong>14k images</strong>. I used <a href="https://github.com/ultralytics/ultralytics/tree/0cb87f7dd340a2611148fbf2a0af59b544bd7b1b#models">YOLOv8m</a> to train the action recognition model on this dataset.
+  </p>  
 
 |            | **mAP50(B)**   | **precision**   | **recall**      |
 |:----------:|:----------:|:----------------:|:----------------:|
@@ -109,7 +109,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 | yolov8m    | 97.2%    | 94.2%        | 94%         |
 | RoboFlow   |  97.2%     | 96.7%      | 91.7%         |
 
-<p>However, it's worth noting that the model may occasionally misidentify coaches as players.</p>
+<p>However, it's worth noting that the yolov8 model, being able to perform in real-time, may occasionally misidentify coaches as players, whereas the RoboFlow model will have a higher rate of <strong>false negatives</strong>, resulting in missed player detections.</p>
 
 <h3>🏃‍♂️ How to Run</h3>
 <ul>
@@ -132,24 +132,43 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 |------|---------|---------|-------|
 | <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking"><img src="https://github.com/shukkkur/VolleyVision/blob/6ac8230e48de95a8edb3a1c4793657ddb06f1409/README_files/volley-collage.jpg" width="600"></a> | <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions"><img src="https://github.com/shukkkur/VolleyVision/blob/f59e9feba6946d6ce7706b8c6b27081461d0401e/assets/actions_collage.png" width="600"></a> | <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset"><img src="https://github.com/shukkkur/VolleyVision/blob/f59e9feba6946d6ce7706b8c6b27081461d0401e/assets/players_collage.png" width="600"></a> | <img src="https://github.com/shukkkur/VolleyVision/blob/280fed79d290c1cf6d53c869fa60355eeb04d148/assets/in_progress.jpg" width="600"> |
 
-
-
+<details><summary><i>details</i></h2></summary>
 <ul>
   <li>
-  <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true">Volleyball</a> (1 class, annotated)
-  <ul>
-    <li>Source Images - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/9">25k_version</a></li>
-    <li>Source Images (640x640) - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/13">25k_resized</a></li>
-  </ul>
+    <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking">Volleyball</a> (1 class: volleyball)
+    <ul>
+      <li>Source Images - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/9">25k_version</a></li>
+      <li>Resized (640x640) - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/13">25_version_640</a></li>
+      <li>Resized (800x800) - <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking/dataset/18">25_version_640</a></li>
+    </ul>
   </li>
   
   <li>
-  Players
-  <ul>
-    <li>In Progress...</li>
-  </ul>
+    <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions">Actions</a> (5 classes: block, defense, serve, set, spike)
+    <ul>
+      <li>Source Images - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/5">original</a></li>
+      <li>Resized (640x640) - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/3">resized_640</a></li>
+      <li>Resized (1024x1024) - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/4">stretched_dataset</a></li>
+    </ul>
   </li>
   
+  <li>
+    <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset">Players (1 class: player)</a>
+    <ul>
+      <li>Source Images - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/5">original</a></li>
+      <li>Resized (640x640) - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/3">resized_640</a></li>
+      <li>Resized (1024x1024) - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/4">stretched_dataset</a></li>
+    </ul>
+  </li>
+  
+  <li>
+    <a href="https://www.tugraz.at/index.php?id=17751">Spatiotemporal Volleyball Activtiy Dataset</a> (7 classes: defense-move, attack, block, reception, service, setting, stand)
+    <ul>
+      <li>Source Images - <a href="https://universe.roboflow.com/shukur-sabzaliev-zc3en/volleyball-activity-dataset/dataset/3">original</a></li>
+      <li>Resized (640x640) - <a href="https://universe.roboflow.com/shukur-sabzaliev-zc3en/volleyball-activity-dataset/dataset/4">resized_640</a></li>
+    </ul>
+  </li>
+
   <li>
     Court
     <ul>
@@ -158,6 +177,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
   </li>
   
 </ul>
+</details>
   
 <details><summary><h2>📝 LICENSE</h2></summary>
 <p>This project is licensed under the <strong>Creative Commons Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND)</strong> license.</p>
