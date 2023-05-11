@@ -32,7 +32,7 @@
   ```
 
   <li>
-    <p>Since <a href="https://docs.ultralytics.com/quickstart/#use-with-cli">ultralytics</a> provides simple <strong>CLI</strong>, there is no need for Python environment.</p>
+    <p>Since <a href="https://docs.ultralytics.com/quickstart/#use-with-cli">ultralytics</a> provides simple <strong>CLI</strong>, there is no need for Python environment. Just run:</p>
   </li>
 
 1) ```yolo predict model=actions\yV8_medium\weights\best.pt source=assets\actions.jpg show_conf=False show_labels=True```
