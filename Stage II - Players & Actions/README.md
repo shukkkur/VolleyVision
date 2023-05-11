@@ -35,6 +35,8 @@
     <p>Since <a href="https://docs.ultralytics.com/quickstart/#use-with-cli">ultralytics</a> provides simple <strong>CLI</strong>, there is no need for Python environment.</p>
   </li>
 
+- ```yolo predict model=actions\yV8_medium\weights\best.pt source=assets\actions.jpg show_conf=False show_labels=True```
+- ```yolo predict model=players\yV8_medium\weights\best.pt source=assets\players.jpg show_conf=False show_labels=False```
 
 |   <code>actions\yV8_medium\weights\best.pt</code>   |   <code>players\yV8_medium\weights\best.pt</code>   |
 |--------------|--------------|
