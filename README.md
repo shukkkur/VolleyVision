@@ -95,7 +95,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 | RoboFlow   |  83.7%     | 78.5%      | 82.3%         |
 
 <p>The results were highly promising, as shown by the performance metrics.</p>
-<br>
+
 <h4>Players Detection</h4>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset"><img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img></a>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset/model/"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
