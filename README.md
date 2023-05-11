@@ -74,8 +74,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 |**precision** |    86.4%    |   94.7%  |
 |**recall**    |    65.8%    |   86.1%  |
 
-  <strong>RoboFlow</strong> model is more accurate and works better on official matches, rather than yolov7 model.However, it requires longer time for inference. Whereas, <strong>yoloV7-tiny</strong> is capable of real-time inference but is less accurate but still good for larger volleyballs. I was trying to train the standard <a href="https://github.com/WongKinYiu/yolov7#performance">yolov7</a>, however, with GPU memory being 4GB, I could only afford training with <code>batch_size=8 img-size=480</code>, which didn't yield best results.
-</p>
+  <strong>RoboFlow</strong> model is more accurate and works better on official matches, rather than yolov7 model. However, it requires longer time for inference. <strong>YoloV7-tiny</strong> is capable of real-time inference, even though it is less accurate than RoboFlow model, it is still a good and fast choice for larger volleyballs.</p>
 </details>
 
 <details><summary><h3>Stage II | Action Recognition & Player Detection</h3></summary>
@@ -219,3 +218,5 @@ V Extra blank line below!
 <!-- <img src="https://github.com/shukkkur/VolleyVision/blob/2e4ce97819f591573de99fcfe04ba0f0259dff9a/assets/rf_men_rally.gif" width="350" height="250"> | <img src="https://github.com/shukkkur/VolleyVision/blob/2e4ce97819f591573de99fcfe04ba0f0259dff9a/assets/rf_women_rally.gif" width="350" height="250"> -->
 
 <!--   https://blog.roboflow.com/new-and-improved-roboflow-train/ -->
+
+<!-- I was trying to train the standard <a href="https://github.com/WongKinYiu/yolov7#performance">yolov7</a>, however, with GPU memory being 4GB, I could only afford training with <code>batch_size=8 img-size=480</code>, which didn't yield best results. -->
