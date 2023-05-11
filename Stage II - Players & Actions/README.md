@@ -28,8 +28,19 @@
   
   ```
   cd VolleyVision\Stage II - Players & Actions
-  pip install -r requirements.txt
+  pip install ultralytics
   ```
+
+  <li>
+    <p>Since <a href="https://docs.ultralytics.com/quickstart/#use-with-cli">ultralytics</a> provides simple <strong>CLI</strong>, there is no need for Python environment.</p>
+  </li>
+
+
+|   <code>yolo predict model=actions\yV8_medium\weights\best.pt source=assets\players.jpg show_conf=False show_labels=False</code>   |   <code>yolo predict model=actions\yV8_medium\weights\best.pt source=assets\players.jpg show_conf=False show_labels=False</code>   |
+|--------------|--------------|
+|  ![Image 1](https://github.com/shukkkur/VolleyVision/blob/bd87bc614df0c6a2b38067b9d7e0c3a7603a4a65/Stage%20II%20-%20Players%20%26%20Actions/assets/out_actions.jpg)  |  ![Image 1](https://github.com/shukkkur/VolleyVision/blob/bd87bc614df0c6a2b38067b9d7e0c3a7603a4a65/Stage%20II%20-%20Players%20%26%20Actions/assets/out_actions.jpg)  |
+
+ 
 
 
 <h4>For any additional quesitons feel free to take part in <a href="https://github.com/shukkkur/VolleyVision/discussions">discussions</a>, open an <a href="https://github.com/shukkkur/VolleyVision/issues/new">issue</a> or <a href="https://github.com/shukkkur#feel-free-to-connectcontact">contact</a> me.</h4>
