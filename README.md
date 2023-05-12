@@ -40,7 +40,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
   <br>
   🏐 Create volleyball datasets
   <br>
-  🏐 Contirubte to open-soruce community
+  🏐 Contribute to open-soruce community
   <br>
 
 </p>
