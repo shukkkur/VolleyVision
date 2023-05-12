@@ -133,7 +133,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 | <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking"><img src="https://github.com/shukkkur/VolleyVision/blob/6ac8230e48de95a8edb3a1c4793657ddb06f1409/README_files/volley-collage.jpg" width="600"></a> | <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions"><img src="https://github.com/shukkkur/VolleyVision/blob/f59e9feba6946d6ce7706b8c6b27081461d0401e/assets/actions_collage.png" width="600"></a> | <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset"><img src="https://github.com/shukkkur/VolleyVision/blob/f59e9feba6946d6ce7706b8c6b27081461d0401e/assets/players_collage.png" width="600"></a> | <img src="https://github.com/shukkkur/VolleyVision/blob/10da824026eafd787f85c0a4d9e88d6259c31a72/assets/3d_activity.png" width="465"> |
 
 <details><summary><i>datasets' details</i></h2></summary>
-<ul>
+<ol>
   <li>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking">Volleyball</a> (1 class: volleyball)
     <ul>
@@ -169,6 +169,14 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
     </ul>
     <p>This dataset belongs to Institute of Computer Graphics and Vision, I downloaded the annotations and the videos from the website, did all the preprocessing and uploaded it to RoboFlow, to make it more accessible and convinient for others to download. The only limiation is that RoboFlow splitted it randomly into train/test/split. Therefore, after downloading the images and annotations, they should  combined and then a sequential split should be performed. </p>
   </li>
+  
+  <li>
+    <a href="https://deeperaction.github.io/datasets/multisports.html">A Multi-Person Video Dataset of Spatio-Temporally Localized Sports Actions</a> (12 classes: first hit pass, defend, no offensive attack...).
+    <ul>
+      <li>HuggingFace - <a href="https://huggingface.co/datasets/MCG-NJU/MultiSports">dataset</a></li>
+    </ul>
+    <p>MultiSports is a multi-person dataset of spatio-temporal localized sports actions. Please refer to <a href="https://arxiv.org/abs/2105.07404">this paper</a> for more details. Please refer to <a href="https://github.com/MCG-NJU/MultiSports/">this repository</a></li> for evaluation. </p>
+  </li>
 
   <li>
     Court
@@ -177,7 +185,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
     </ul>
   </li>
   
-</ul>
+</ol>
 </details>
   
 <details><summary><h2>📝 LICENSE</h2></summary>
