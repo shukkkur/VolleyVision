@@ -153,7 +153,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
   </li>
   
   <li>
-    <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset">Players (1 class: player)</a>
+    <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset">Players</a> (1 class: player)
     <ul>
       <li>Source Images - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/5">original</a></li>
       <li>Resized (640x640) - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/dataset/3">resized_640</a></li>
@@ -167,7 +167,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
       <li>Source Images - <a href="https://universe.roboflow.com/shukur-sabzaliev-zc3en/volleyball-activity-dataset/dataset/3">original</a></li>
       <li>Resized (640x640) - <a href="https://universe.roboflow.com/shukur-sabzaliev-zc3en/volleyball-activity-dataset/dataset/4">resized_640</a></li>
     </ul>
-    <p>This dataset belongs to Institute of Computer Graphics and Vision, I downloaded the annotations and the videos from the website, did all the preprocessing and uploaded it to RoboFlow, to make it more accessible and convinient for others to download. The only limiation is that RoboFlow splitted it randomly into train/test/split. Therefore, after downloading the images and annotations, they should  combined and then a sequential split should be performed. </p>
+    <p>This dataset belongs to Institute of Computer Graphics and Vision, I downloaded the annotations and the videos from the website, did all the preprocessing and uploaded it to RoboFlow, to make it more accessible and convinient for others to download. Please note that this dataset is <strong>video dataset</strong> but RoboFlow splitted it randomly into train/test/split. Therefore, after downloading the images and annotations, they all should be combined and then split sequentially.</p>
   </li>
   
   <li>
