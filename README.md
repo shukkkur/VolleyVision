@@ -121,10 +121,29 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 
 <details><summary><h3>Court Tracking</h3></summary>
-<p>
-  Someday ... 
+<a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/court-segmented"><img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img></a>
+<a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/court-segmented/model/"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
+
+<p>In this stage, I trained simple <strong>Semantic Segmentation</strong> model on RoboFlow to find and outline the court. Keep in mind, this was a quick and fun experiment due to an upcoming thesis deadline, and it may not work perfectly every time. </p>
+
+<img src="https://github.com/shukkkur/VolleyVision/blob/86a79be02caea17bfbbbaee44366a9cfc5f31f42/Stage%20III%20-%20Court%20Detection/assets/collage_court.png" width="800">
+
+<p>The collage image above should give you the idea about the steps I took to detect the court: 
+  <ol>
+    <li>Get the segmentation mask from the model</li>
+    <li>Find Contours - <code>cv2.findContours</code></li>
+    <li>Approximate a polygonal curve - <code>cv2.approxPolyDP</code></li>
+  </ol>
 </p>
+
+<h2>🏃‍♂️ How to Run</h2>
+<ul>
+  <li>
+  <p>Check out the <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions#readme">Stage II - Players & Actions/README.md</a></p>
+  </li>
+</ul>
 </details>
+
 
 <h2>💾 Datasets</h2>
 
