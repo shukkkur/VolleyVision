@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-  Stage II - Players Detection & Action Recognition
+  Stage III - Court Detection
 </h1>
 
 <p align='center'>
