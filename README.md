@@ -175,7 +175,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
     <ul>
       <li>HuggingFace - <a href="https://huggingface.co/datasets/MCG-NJU/MultiSports">dataset</a></li>
     </ul>
-    <p>MultiSports is a multi-person dataset of spatio-temporal localized sports actions. Please refer to <a href="https://arxiv.org/abs/2105.07404">this paper</a> for more details. Please refer to <a href="https://github.com/MCG-NJU/MultiSports/">this repository</a></li> for evaluation. </p>
+    <p>MultiSports is a multi-person dataset of spatio-temporal localized sports actions. Please refer to <a href="https://arxiv.org/abs/2105.07404">this paper</a> for more details and to <a href="https://github.com/MCG-NJU/MultiSports/">this repository</a> for evaluation. </p>
   </li>
 
   <li>
