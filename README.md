@@ -133,7 +133,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 <p>Keep in mind, this was a quick and fun experiment due to an upcoming thesis deadline, and it may not work perfectly every time. </p>
 
-<img src="https://github.com/shukkkur/VolleyVision/blob/86a79be02caea17bfbbbaee44366a9cfc5f31f42/Stage%20III%20-%20Court%20Detection/assets/collage_court.png" width="800">
+<img src="https://github.com/shukkkur/VolleyVision/blob/86a79be02caea17bfbbbaee44366a9cfc5f31f42/Stage%20III%20-%20Court%20Detection/assets/collage_court.png" width="600">
 
 <p>The collage image above should give you the idea about the steps I took to detect the court: 
   <ol>
