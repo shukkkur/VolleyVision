@@ -124,7 +124,14 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/court-segmented"><img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img></a>
 <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/court-segmented/model/"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
 
-<p>In this stage, I trained simple <strong>Semantic Segmentation</strong> model on RoboFlow to find and outline the court. Keep in mind, this was a quick and fun experiment due to an upcoming thesis deadline, and it may not work perfectly every time. </p>
+<p>In this stage, I trained a simple <strong>Semantic Segmentation</strong> model on RoboFlow to find and outline the court. </p>
+
+|      | mIoU  |
+|------|-------|
+| RoboFlow     | 97.2% |
+
+
+<p>Keep in mind, this was a quick and fun experiment due to an upcoming thesis deadline, and it may not work perfectly every time. </p>
 
 <img src="https://github.com/shukkkur/VolleyVision/blob/86a79be02caea17bfbbbaee44366a9cfc5f31f42/Stage%20III%20-%20Court%20Detection/assets/collage_court.png" width="800">
 
@@ -139,7 +146,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 <h2>🏃‍♂️ How to Run</h2>
 <ul>
   <li>
-  <p>Check out the <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions#readme">Stage II - Players & Actions/README.md</a></p>
+  <p>Check out the <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20III%20-%20Court%20Detection#readme">Stage III - Court Detection/README.md</a></p>
   </li>
 </ul>
 </details>
