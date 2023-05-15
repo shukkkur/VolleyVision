@@ -234,7 +234,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 </details>
 
 <details><summary><h3>💖 Sponsor</h3></summary>
-<p>If you find my work useful or interesting, please consider supporting me on <strong><a href="https://ko-fi.com/shukkkur">Ko-fi</a></strong> or reach out to me to say "thank you", which I equally appreciate!)</p>
+<p>If you find my work useful or interesting, I would greatly appreciate your support on <strong><a href="https://ko-fi.com/shukkkur">Ko-fi</a></strong>. Alternatively, you can simply reach out to me and say 'thank you,' which I equally value!)</p>
 </details>
 
 <details><summary><h3>👨‍💻 Further Development</h3></summary>
