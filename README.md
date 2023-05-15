@@ -23,7 +23,7 @@
 </p>
 
 
-<h2>🧪 Example usage</h2>
+<h3>🧪 Example usage</h3>
 
 Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/main/Stage%20I%20-%20Volleyball/assets)
 :-------------------------:|:-------------------------:
@@ -32,7 +32,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/weights/actions/yV8_medium/weights"><img src="https://github.com/shukkkur/VolleyVision/blob/1c6c180c445a8be413defac520899e411c07f043/assets/actions.gif" width="385" height="250"></a> | <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/weights/players/yV8_medium/weights"><img src="https://github.com/shukkkur/VolleyVision/blob/c098d6eb2f84ef07ded1d24bcb8da9641cb1737a/assets/players.gif" width="385" height="250"></a>
 
 
-<h2>🎯 Objectives</h2>
+<h3>🎯 Objectives</h3>
 
 <p>🏐 Learn and apply popular CV techniques to volleyball data
   <br>
@@ -46,7 +46,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 </p>
 
 
-<h2>📝 About</h2>
+<h3>📝 About</h3>
 
 <p><strong>November 7, 2022</strong> | The result of my project should be a web application, that takes a  volleyball video  and is able to detect and track the ball, players, the court and provides game statistics.</p>
 
@@ -71,7 +71,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
   <strong>RoboFlow</strong> model is more accurate and works better on official matches, rather than yolov7 model. However, it requires longer time for inference. <strong>YoloV7-tiny</strong> is capable of real-time inference, even though it is less accurate than RoboFlow model, it is still a good and fast choice for larger volleyballs.</p>
 
-<h2>🏃‍♂️ How to Run</h2>
+<h3>🏃‍♂️ How to Run</h3>
 <ul>
   <li>
   <p>Check out the <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20I%20-%20Volleyball#readme">Stage I - Volleyball/README.md</a></p>
@@ -111,7 +111,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 <p>However, it's worth noting that the yolov8 model, being able to perform in real-time, may occasionally misidentify coaches as players, whereas the RoboFlow model will have a higher rate of <strong>false negatives</strong>, resulting in missed player detections.</p>
 
-<h2>🏃‍♂️ How to Run</h2>
+<h3>🏃‍♂️ How to Run</h3>
 <ul>
   <li>
   <p>Check out the <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions#readme">Stage II - Players & Actions/README.md</a></p>
@@ -121,18 +121,44 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 
 <details><summary><h3>Court Tracking</h3></summary>
-<p>
-  Someday ... 
+<a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/court-segmented"><img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img></a>
+<a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/court-segmented/model/"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
+
+<p>In this stage, I trained a simple <strong>Semantic Segmentation</strong> model on RoboFlow to find and outline the court. </p>
+
+|      | mIoU  |
+|------|-------|
+| RoboFlow     | 97.2% |
+
+
+<p>Keep in mind, this was a quick and fun experiment due to an upcoming thesis deadline, and it may not work perfectly every time. </p>
+
+<img src="https://github.com/shukkkur/VolleyVision/blob/86a79be02caea17bfbbbaee44366a9cfc5f31f42/Stage%20III%20-%20Court%20Detection/assets/collage_court.png" width="600">
+
+<p>The collage image above should give you the idea about the steps I took to detect the court: 
+  <ol>
+    <li>Get the segmentation mask from the model</li>
+    <li>Find Contours - <code>cv2.findContours</code></li>
+    <li>Approximate a polygonal curve - <code>cv2.approxPolyDP</code></li>
+  </ol>
 </p>
+
+<h3>🏃‍♂️ How to Run</h3>
+<ul>
+  <li>
+  <p>Check out the <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20III%20-%20Court%20Detection#readme">Stage III - Court Detection/README.md</a></p>
+  </li>
+</ul>
 </details>
 
-<h2>💾 Datasets</h2>
+
+<h3>💾 Datasets</h3>
 
 | Volleyball | Actions | Players | Spatiotemporal Activity |
 |------|---------|---------|-------|
 | <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking"><img src="https://github.com/shukkkur/VolleyVision/blob/6ac8230e48de95a8edb3a1c4793657ddb06f1409/README_files/volley-collage.jpg" width="600"></a> | <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions"><img src="https://github.com/shukkkur/VolleyVision/blob/f59e9feba6946d6ce7706b8c6b27081461d0401e/assets/actions_collage.png" width="600"></a> | <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset"><img src="https://github.com/shukkkur/VolleyVision/blob/f59e9feba6946d6ce7706b8c6b27081461d0401e/assets/players_collage.png" width="600"></a> | <img src="https://github.com/shukkkur/VolleyVision/blob/10da824026eafd787f85c0a4d9e88d6259c31a72/assets/3d_activity.png" width="465"> |
 
-<details><summary><i>datasets' details</i></h2></summary>
+<details><summary><i>datasets' details</i></summary>
 <ol>
   <li>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking">Volleyball</a> (1 class: volleyball)
@@ -179,16 +205,16 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
   </li>
 
   <li>
-    Court
+    Court Segmentation
     <ul>
-      <li>In Progress...</li>
+      <li>Source Images - <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/court-segmented">original</a></li>
     </ul>
   </li>
   
 </ol>
 </details>
   
-<details><summary><h2>📝 LICENSE</h2></summary>
+<details><summary><h3>📝 LICENSE</h3></summary>
 <p>This project is licensed under the <strong>Creative Commons Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND)</strong> license.</p>
 <p>This license allows you to:</p>
 <ul>
@@ -207,11 +233,30 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 </p>
 </details>
 
-<details><summary><h2>💖 Sponsor</h2></summary>
-<p>If you find my work useful or interesting, please consider supporting me on <strong><a href="https://ko-fi.com/shukkkur">Ko-fi</a></strong>.</p>
+<details><summary><h3>💖 Sponsor</h3></summary>
+<p>If you find my work useful or interesting, please consider supporting me on <strong><a href="https://ko-fi.com/shukkkur">Ko-fi</a></strong> or reach out to me to say "thank you", which I equally appreciate!)</p>
 </details>
 
-<details><summary><h2>🙌 Acknowledgement</h2></summary>
+<details><summary><h3>👨‍💻 Further Development</h3></summary>
+<ul>
+  <li><strike></strike></li>
+  <li></li>
+</ul>
+</details>
+
+<details><summary><h3>🐛 Current Drawbacks</h3></summary>
+<ul>
+  <li></li>
+</ul>
+</details>
+
+<details><summary><h3>🫶 Contribute</h3></summary>
+
+<p>Help me by annoating data, discussing potential improvements or writing a better documentation. Check out the <a href="https://github.com/shukkkur/VolleyVision/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>. Contributing is easy and appreciated!</p>
+</details>
+
+
+<details><summary><h3>🙌 Acknowledgement</h3></summary>
   <ul>
     <li>
     This project wouldn't possible without amazing & free RoboFlow <a href="https://roboflow.com/annotate">annotation tools</a> , open-source <a href="https://universe.roboflow.com/">datasets</a>, quick & easy <a href="https://roboflow.com/deploy">deployement</a> and high-level <a href="https://blog.roboflow.com/">blog posts</a></li>
@@ -221,10 +266,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
   </ul>
 </details>
 
-<details><summary><h2>📞 Contact</h2></summary>
-
 <h4>For any additional quesitons feel free to take part in <a href="https://github.com/shukkkur/VolleyVision/discussions">discussions</a>, open an <a href="https://github.com/shukkkur/VolleyVision/issues/new">issue</a> or <a href="https://github.com/shukkkur#feel-free-to-connectcontact">contact</a> me.</h4>
-</details>
 
 <!--
 <table>
