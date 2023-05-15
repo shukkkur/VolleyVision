@@ -239,8 +239,14 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 <details><summary><h3>👨‍💻 Further Development</h3></summary>
 <ul>
-  <li><strike></strike></li>
-  <li></li>
+  <li>Develop a Web App</li>
+  <li>Deploy the App</li>
+  <li>Unify all three stages into one coherent and easy to run script</li>
+  <li>Improve Court Detection</li>
+  <li>Train YoloV8 on Volleyball Dataset</li>
+  <li>Train 3D Model on <a href="https://universe.roboflow.com/shukur-sabzaliev-zc3en/volleyball-activity-dataset">Spatiotemporal Activity Dataset</a></li>
+  <li>Extract and transport volleyball actions from <a href="https://huggingface.co/datasets/MCG-NJU/MultiSports">MultiSports</a> to RoboFlow</li>
+  
 </ul>
 </details>
 
