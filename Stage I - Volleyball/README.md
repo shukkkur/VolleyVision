@@ -63,7 +63,7 @@
 </ol>
 
 ```
-python detect.py --weights best.pt --conf 0.5 --source assets/small
+python yolov7_detect.py --weights best.pt --conf 0.5 --source assets/small
 ```
 
 <ul>
