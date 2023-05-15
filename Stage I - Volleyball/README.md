@@ -58,7 +58,15 @@
   <i>Note that, it took <code>volley_track.py</code> <strong>0.73</strong> minutes to process the video, whereas <strong>volley_detect.py</strong> completed in <strong>2.75 minutes</strong>.</i>
 
 <li>
-  If you are interested in running the models on individual frames, for <code>roboflow</code> use this <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking/model/18">API</a>. And for <code>yolov7</code> run the following line with <code>--source</code> being your image, folder with images or even video.
+  If you are interested in running the models on individual frames, for <code>roboflow</code> path either an image or a folder with images 
+</li>
+  
+```
+python roboflow_detect.py --input_path assets\small --marker box --color yellow
+```
+  
+<li>
+  And for <code>yolov7</code> run the following line with <code>--source</code> being your image, folder with images or even video.
 </li>
 </ol>
 
