@@ -239,15 +239,14 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 <details><summary><h3>👨‍💻 Further Development</h3></summary>
 <ul>
-  <li>Develop a Web App</li>
-  <li>Deploy the App</li>
+  <li>Develop and deploy a web app</li>
   <li>Unify all three stages into one coherent and easy to run script</li>
-  <li>Improve Court Detection</li>
-  <li>Train YoloV8 on Volleyball Dataset</li>
+  <li>Research and apply better Court Detection methods</li>
+  <li>Train YoloV8 on <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking">Volleyball Dataset</a></li>
   <li>Train 3D Model on <a href="https://universe.roboflow.com/shukur-sabzaliev-zc3en/volleyball-activity-dataset">Spatiotemporal Activity Dataset</a></li>
   <li>Extract and transport volleyball actions from <a href="https://huggingface.co/datasets/MCG-NJU/MultiSports">MultiSports</a> to RoboFlow</li>
-  <li>Combine Players Tracking with Actions Recognition to generate statistics</li>
-  <li>Combine Volleyball Tracking with Court Detection for <strong>smart ball in/out referee system</strong></li>
+  <li>Combine <strong>Players Detection</strong> with <strong>Actions Recognition</strong> to generate personalized statistics</li>
+  <li>Combine <strong>Volleyball Tracking</strong> with <strong>Court Detection</strong> for <strong>smart ball in/out referee system</strong></li>
   <li>Annotate more side-view (official recordings) data for <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions">Action Recognition Dataset</a></li>
   <li>Annotate more data for <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/court-segmented">Court Segmentation Dataset</a></li>
   <li>Annotate more data for <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset">Players Detection Dataset</a></li>
@@ -256,11 +255,11 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 <details><summary><h3>🐛 Current Drawbacks</h3></summary>
 <ul>
-  <li>RoboFlow volleyball detection model is slow, due to using the API on every frame</li>
-  <li>Court detection is neither robust nor fast</li>
-  <li>Action recognition model is undertrained on <code>Defense</code> class</li>
-  <li>Action recogntiion model is understained on side-view recordings</li>
-  <li>Players detection occasionally detects coaches, referees and spectators as <code>player</code></li>
+  <li>RoboFlow <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking/model/18">Volleyball Detection Model</a> is slow, due to the API being called on every single frame</li>
+  <li>Court Detection is neither robust nor fast</li>
+  <li>Action Recognition model is undertrained on <code>Defense</code> class</li>
+  <li>Action Recogntiion model is undertrained on side-view data</li>
+  <li>Players Detection occasionally detects coaches, referees and spectators as <code>player</code> class</li>
 </ul>
 </details>
 
