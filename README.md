@@ -252,7 +252,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 <details><summary><h3>🫶 Contribute</h3></summary>
 
-<p>Help me by contributing, check out the <a href="https://github.com/shukkkur/VolleyVision/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>. Contributing is easy and appreciated!</p>
+<p>Help me by annoating data, discussing potential improvements or writing a better documentation. Check out the <a href="https://github.com/shukkkur/VolleyVision/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>. Contributing is easy and appreciated!</p>
 </details>
 
 
