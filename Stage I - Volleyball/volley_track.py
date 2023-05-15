@@ -134,7 +134,7 @@ if model_name == 'roboflow':
     project = rf.workspace().project("volleyball-tracking")
     model = project.version(13).model
 elif model_name == 'yolov7':
-    model = custom(path_or_model='weights/weights/best.pt')
+    model = custom(path_or_model='yV7-tiny/weights/best.pt')
     model.conf = conf
 
 model = RoboYOLO(model_name, model, conf)
