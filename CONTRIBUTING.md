@@ -9,7 +9,7 @@
 
 Hey there!
 
-My name is Shukur (Shakhansho) Sabzaliev and thank you for considering contributing to VolleyVision! Your help and support are greatly appreciated.
+Thank you for considering contributing to VolleyVision! Your help and support are immensly appreciated.
 
 ## How to Contribute
 
