@@ -234,8 +234,25 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 </details>
 
 <details><summary><h2>💖 Sponsor</h2></summary>
-<p>If you find my work useful or interesting, please consider supporting me on <strong><a href="https://ko-fi.com/shukkkur">Ko-fi</a></strong>.</p>
+<p>If you find my work useful or interesting, please consider supporting me on <strong><a href="https://ko-fi.com/shukkkur">Ko-fi</a></strong> or reach out to me to say "thank you", wich I will equally appreacite!)</p>
 </details>
+
+<details><summary><h2>👨‍💻 Further Developments</h2></summary>
+<ul>
+  <li><strike></strike></li>
+  <li></li>
+</ul>
+</details>
+
+<details><summary><h2>🐛 Current Drawbacks</h2></summary>
+<ul>
+  <li></li>
+</ul>
+</details>
+
+<details><summary><h2>🫶 Contribute</h2></summary>
+
+<p>Help me by contributing, check out the <a href="https://github.com/shukkkur/VolleyVision/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>. Contributing is easy and appreciated!</p>
 
 <details><summary><h2>🙌 Acknowledgement</h2></summary>
   <ul>
