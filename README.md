@@ -207,7 +207,10 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
   <li>
     Court
     <ul>
-      <li>In Progress...</li>
+      <li>Court Segmentation</li>
+          <ul>
+            <li>Source Images - <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/court-segmented">original</a></li>
+          </ul>
     </ul>
   </li>
   
