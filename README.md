@@ -258,11 +258,14 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 <details><summary><h3>🙌 Acknowledgement</h3></summary>
   <ul>
-    <li>
-    This project wouldn't possible without amazing & free RoboFlow <a href="https://roboflow.com/annotate">annotation tools</a> , open-source <a href="https://universe.roboflow.com/">datasets</a>, quick & easy <a href="https://roboflow.com/deploy">deployement</a> and high-level <a href="https://blog.roboflow.com/">blog posts</a></li>
-  <li>Supervisor</li>
-  <li>Course Instructor</li>
-  <li>University of Central Asia</li>
+      <p align="center">
+        <img src="https://github.com/shukkkur/VolleyVision/blob/2bf4497171830d7b0c5279847da1d6364adfce75/assets/roboflow_logo.png" width="500">
+      </p>
+<li>
+    This project wouldn't possible without amazing & free RoboFlow <a href="https://roboflow.com/annotate">annotation tools</a> , open-source <a href="https://universe.roboflow.com/">datasets</a>, quick & easy <a href="https://roboflow.com/deploy">deployement</a> and high-level <a href="https://blog.roboflow.com/">blog posts</a>. Special thanks to <a href="https://blog.roboflow.com/author/mohamed/">Mohamed Traore</a> for tirelessly approving my constant requests for data storage and model training credits</li>
+    <li><a href="https://github.com/artkulak">Artyom Kulakov</a> - My supervisor. Sincerest gratitude that you foud time to guiding and support me along the entire journey (starting from <a href="https://github.com/ArtLabss">ArtLabs</a>))))</li>
+    <li><a href="https://ucentralasia.org/faculty-and-staff/dr-nurlan-shaidullaev">Nurlan Aghai</a> - FYP course instructor. Thank you for your vigilence, constant reminders about the upcoming deadlinesД :D</li>
+    <li><a href="https://ucentralasia.org/home">University of Central Asia</a> - my home for the past 5 years. Immense gratitude to AKDN.</li>
   </ul>
 </details>
 
