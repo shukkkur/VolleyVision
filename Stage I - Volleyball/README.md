@@ -68,11 +68,12 @@ python roboflow_detect.py --input_path assets\small --marker box --color yellow
 <li>
   And for <code>yolov7</code> run the following line with <code>--source</code> being your image, folder with images or even video.
 </li>
-</ol>
 
 ```
 python yolov7_detect.py --weights yV7-tiny\weights\best.pt --conf 0.5 --source assets/small
 ```
+
+</ol>
 
 <ul>
   <li>
