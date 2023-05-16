@@ -33,11 +33,11 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 <h3>🎯 Objectives</h3>
 <p>
-  ✅ Learn and apply popular CV techniques to volleyball data   
-  ✅ Popularize volleyball in the field of AI                   
-  ✅ Create volleyball datasets                                 
+  ✅ Learn and apply popular CV techniques to volleyball data   <br>
+  ✅ Popularize volleyball in the field of AI                   <br>
+  ✅ Create volleyball datasets                                 <br>
   ✅ Contribute to open-soruce community                        
-</pre>
+</p>
 
 
 <h3>📝 About</h3>
