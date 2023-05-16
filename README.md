@@ -31,12 +31,12 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 <strong>Action Recognition</strong> | <strong>Players Detection</strong>
 <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/weights/actions/yV8_medium/weights"><img src="https://github.com/shukkkur/VolleyVision/blob/1c6c180c445a8be413defac520899e411c07f043/assets/actions.gif" width="385" height="250"></a> | <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20II%20-%20Players%20%26%20Actions/weights/players/yV8_medium/weights"><img src="https://github.com/shukkkur/VolleyVision/blob/c098d6eb2f84ef07ded1d24bcb8da9641cb1737a/assets/players.gif" width="385" height="250"></a>
 
-<pre>
-<strong>🎯 Objectives</strong>
-  🏐 Learn and apply popular CV techniques to volleyball data   ✅
-  🏐 Popularize volleyball in the field of AI                   ✅
-  🏐 Create volleyball datasets                                 ✅
-  🏐 Contribute to open-soruce community                        ✅
+<h3>🎯 Objectives</h3>
+<p>
+  ✅ Learn and apply popular CV techniques to volleyball data   
+  ✅ Popularize volleyball in the field of AI                   
+  ✅ Create volleyball datasets                                 
+  ✅ Contribute to open-soruce community                        
 </pre>
 
 
