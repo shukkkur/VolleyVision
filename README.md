@@ -45,7 +45,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 <p><strong>November 7, 2022</strong> | The result of my project should be a web application, that takes a  volleyball video  and is able to detect and track the ball, players, the court and provides game statistics.</p>
 
 
-<details><summary><h3>Volleyball Detection & Tracking</h3></summary>
+<details><summary><h3>🏐 Volleyball Detection & Tracking</h3></summary>
 
 <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking/model/"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
 <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking"><img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img></a>
@@ -73,7 +73,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 </ul>
 </details>
 
-<details><summary><h3>Player Detection & Action Recognition</h3></summary>
+<details><summary><h3>🏃 Player Detection & 🤾 Action Recognition</h3></summary>
     <h4>Action Recognition</h4>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions"><img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img></a>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions/model/3"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
@@ -145,14 +145,13 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 </ul>
 </details>
 
-
-<h3>💾 Datasets</h3>
-
+<details><summary><h3>💾 Datasets</h3></summary>
+  
 | Volleyball | Actions | Players | Spatiotemporal Activity |
 |------|---------|---------|-------|
 | <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking"><img src="https://github.com/shukkkur/VolleyVision/blob/6ac8230e48de95a8edb3a1c4793657ddb06f1409/README_files/volley-collage.jpg" width="600"></a> | <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/volleyball-actions"><img src="https://github.com/shukkkur/VolleyVision/blob/f59e9feba6946d6ce7706b8c6b27081461d0401e/assets/actions_collage.png" width="600"></a> | <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset"><img src="https://github.com/shukkkur/VolleyVision/blob/f59e9feba6946d6ce7706b8c6b27081461d0401e/assets/players_collage.png" width="600"></a> | <img src="https://github.com/shukkkur/VolleyVision/blob/10da824026eafd787f85c0a4d9e88d6259c31a72/assets/3d_activity.png" width="465"> |
 
-<details><summary><i>datasets' details</i></summary>
+  
 <ol>
   <li>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking">Volleyball</a> (1 class: volleyball)
