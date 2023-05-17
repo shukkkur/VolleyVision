@@ -1,4 +1,0 @@
-opencv-python
-tqdm
-roboflow
-numpy
