@@ -9,6 +9,7 @@ class UploadFileForm(forms.Form):
     ]
     FILE_TYPE_CHOICES = [
         ('image', 'Image'),
+        ('video', 'Video'),
         # Removed 'video' choice
     ]
     file = forms.FileField()
