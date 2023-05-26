@@ -1,0 +1,3 @@
+Just some files: presentation, report, booklet synopsis etc ... 
+
+Keeping them for myself.
