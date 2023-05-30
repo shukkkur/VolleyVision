@@ -13,7 +13,7 @@
 <h2>🏃‍♂️ How to Run</h2>
 
 <ol>
-  
+
   <li>
     Clone this repository
   </li>
@@ -31,8 +31,15 @@
   pip install ultralytics
   ```
 
+<li>
+  <p>You can run using Python script <code>main.py</code></p>
+</li>
+
+1) ```python main.py --model actions\yV8_medium\weights\best.pt --input_path assets\actions.jpg --ouput_path Output/actions.jpg --show_labels```
+2) ```python main.py --mode players\yV8_medium\weights\best.pt --input_path assets\players.jpg --ouput_path Output/players.jpg```
+  
   <li>
-    <p>Since <a href="https://docs.ultralytics.com/quickstart/#use-with-cli">ultralytics</a> provides simple <strong>CLI</strong>, there is no need for Python environment. Just run:</p>
+    <p>Since <a href="https://docs.ultralytics.com/quickstart/#use-with-cli">ultralytics</a> provides simple <strong>CLI</strong> you can also use it</p>
   </li>
 
 1) ```yolo predict model=actions\yV8_medium\weights\best.pt source=assets\actions.jpg show_conf=False show_labels=True```
