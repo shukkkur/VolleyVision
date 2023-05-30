@@ -55,7 +55,17 @@
 :-------------------------:|:-------------------------:
 <img src="https://github.com/shukkkur/VolleyVision/blob/914b8dc3873767b7b1a1c62b7b75633d8a3a9af6/assets/track_men.gif"> | <img src="https://github.com/shukkkur/VolleyVision/blob/280fed79d290c1cf6d53c869fa60355eeb04d148/assets/rf_men_rally.gif">
 
-  <i>Note that, it took <code>volley_track.py</code> <strong>0.73</strong> minutes to process the video, whereas <strong>volley_detect.py</strong> completed in <strong>2.75 minutes</strong>.</i>
+<i>Note that, it took <code>volley_track.py</code> <strong>0.73</strong> minutes to process the video, whereas <strong>volley_detect.py</strong> completed in <strong>2.75 minutes</strong>.</i>
+
+<ul>
+  <li>
+    <p>You can get all list or arguments using `-h` flag</p>
+  </li>
+</ul>
+
+```python
+python detect.py -h
+```
 
 <img src="https://github.com/shukkkur/VolleyVision/blob/210368ae91bd078d2f00dfbbbe020f59625c2550/Stage%20I%20-%20Volleyball/assets/args.png">
 
