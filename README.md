@@ -42,7 +42,7 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 <h3>📝 About</h3>
 
-<p><strong>November 7, 2022</strong> | The result of my project should be a web application, that takes a  volleyball video  and is able to detect and track the ball, players, the court and provides game statistics.</p>
+<!-- <p><strong>November 7, 2022</strong> | The result of my project should be a web application, that takes a  volleyball video  and is able to detect and track the ball, players, the court and provides game statistics.</p> -->
 
 
 <details><summary><h3>🏐 Volleyball Detection & Tracking</h3></summary>
@@ -274,6 +274,8 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
     <li><a href="https://ucentralasia.org/home">University of Central Asia</a> - my home for the past 5 years. Immense gratitude to AKDN.</li>
   </ul>
 </details>
+
+<img src="https://github.com/shukkkur/VolleyVision/blob/1d1836c3a7968cbcde4bcf5cfb5e8eaf4c16acfb/assets/header.png">
 
 <h4>For any additional quesitons feel free to take part in <a href="https://github.com/shukkkur/VolleyVision/discussions">discussions</a>, open an <a href="https://github.com/shukkkur/VolleyVision/issues/new">issue</a> or <a href="https://github.com/shukkkur#feel-free-to-connectcontact">contact</a> me.</h4>
 
