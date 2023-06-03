@@ -174,7 +174,9 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
   <li>
     <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset">Players</a> (1 class: player)
     <ul>
-      <li>Source Images - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset/dataset/4">original</a></li>
+      <li>Source Images - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset/dataset/1">original</a></li>
+      <li>Resized (640x640) - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset/dataset/4">resized</a></li>
+      <li>Augmented Resized (640x640) - <a href="https://universe.roboflow.com/shukur-sabzaliev-42xvj/players-dataset/dataset/2">aug_res</a></li>
     </ul>
   </li>
   
