@@ -42,7 +42,9 @@ Sample Inputs | From [assets/](https://github.com/shukkkur/VolleyVision/tree/mai
 
 <h3>📝 About</h3>
 
-<!-- <p><strong>November 7, 2022</strong> | The result of my project should be a web application, that takes a  volleyball video  and is able to detect and track the ball, players, the court and provides game statistics.</p> -->
+
+<p><strong>November 7, 2022</strong> | The result of my project should be a web application, that takes a  volleyball video  and is able to detect and track the ball, players, the court and provides game statistics.</p>
+<p><strong>May 15, 2023</strong> | hahahaha, today is the Diploma Project submission day. Well, there is a simple <a href="https://github.com/shukkkur/volleyvision_app">web app</a>, I couldn't deploy it though, and now I am too burned out and busy to get back to this project. hahah I also planned to provide game statistics from the footage, that also did not go as planned. But, overall I am happy)))</p>
 
 
 <details><summary><h3>🏐 Volleyball Detection & Tracking</h3></summary>
