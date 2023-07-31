@@ -18,7 +18,7 @@
   <img src="https://hits.sh/github.com/shukkkur/VolleyVision.svg"/>
   
   <br>
-  [![slides](https://img.shields.io/badge/Presentation-Slides-B762C1)](https://docs.google.com/presentation/d/1lcpJRam7ZxT-mF9wQBrxsambamZbcPTc/edit?usp=sharing&ouid=112155718847046590465&rtpof=true&sd=true) 
+  <a href="https://docs.google.com/presentation/d/1lcpJRam7ZxT-mF9wQBrxsambamZbcPTc/edit?usp=sharing&ouid=112155718847046590465&rtpof=true&sd=true"><img src="https://img.shields.io/badge/Presentation-Slides-B762C1"></a>
 
   <br>
   <a href="https://ucentralasia.org/home"><code>University of Central Asia</a>⛰️</code>
