@@ -35,8 +35,8 @@
   <p>You can run using Python script <code>main.py</code></p>
 </li>
 
-1) ```python main.py --model actions\yV8_medium\weights\best.pt --input_path assets\actions.jpg --ouput_path Output/actions.jpg --show_labels```
-2) ```python main.py --model players\yV8_medium\weights\best.pt --input_path assets\players.jpg --ouput_path Output/players.jpg```
+1) ```python main.py --model actions/yV8_medium/weights/best.pt --input_path assets/actions.jpg --output_path Output/actions.jpg --show_labels```
+2) ```python main.py --model players/yV8_medium/weights/best.pt --input_path assets/players.jpg --output_path Output/players.jpg```
   
   <li>
     <p>Since <a href="https://docs.ultralytics.com/quickstart/#use-with-cli">ultralytics</a> provides simple <strong>CLI</strong> you can also use it</p>
