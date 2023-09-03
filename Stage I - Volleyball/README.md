@@ -39,7 +39,7 @@
   </li>
   
   ```
-  python volley_track.py --input_video_path assets\rally_men.mp4 --onput_video_path Output/track.mp4 --model roboflow --marker circle --color yellow
+  python volley_track.py --input_path assets\rally_men.mp4 --input_type video --onput_video_path Output/track.mp4 --model roboflow --marker circle --color yellow
   ```
   
   <li>
@@ -47,7 +47,7 @@
   </li>
   
   ```
-  python detect.py --input_path assets\rally_men.mp4 --output_path Output/detect.mp4--model roboflow --marker circle --color yellow 
+  python detect.py --input_path assets\rally_men.mp4 --input_type video --output_path Output/detect.mp4--model roboflow --marker circle --color yellow 
   ```
   
   
