@@ -59,7 +59,7 @@
 
 <ul>
   <li>
-    <p>You can get all list or arguments using `-h` flag</p>
+    <p>You can get all list or arguments using <code>-h</code>code> flag</p>
   </li>
 </ul>
 
