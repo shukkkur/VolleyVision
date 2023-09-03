@@ -19,6 +19,8 @@
   
   <br>
   <a href="https://docs.google.com/presentation/d/1lcpJRam7ZxT-mF9wQBrxsambamZbcPTc/edit?usp=sharing&ouid=112155718847046590465&rtpof=true&sd=true"><img src="https://img.shields.io/badge/Presentation-Slides-B762C1"></a>
+  <a href="https://colab.research.google.com/drive/1X16GNjksEfwVL1090bj3CYHGo772fG6H?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a>
+  
 
   <br>
   <a href="https://ucentralasia.org/home"><code>University of Central Asia</a>⛰️</code>
