@@ -12,6 +12,8 @@
 
 <h2>🏃‍♂️ How to Run</h2>
 
+<a href="https://colab.research.google.com/drive/1X16GNjksEfwVL1090bj3CYHGo772fG6H?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a>
+
 <ol>
   
   <li>
