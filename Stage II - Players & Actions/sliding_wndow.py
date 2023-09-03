@@ -23,9 +23,12 @@ parser.add_argument('--line_width', type=int, default=3, help='Line width for bo
 parser.add_argument('--font_size', type=float, default=3, help='Font size for label visualization')
 parser.add_argument('--verbose', default=False, action='store_true', help='Print the predicted results information')
 parser.add_argument('--imgsz', nargs=2, type=int, default=None, help='Model inference resolution `width height`')
+parser.add_argument('--gpu', default=False, action='store_true', help='Whether to use GPU')
 args = parser.parse_args()
 
-# torch.cuda.set_device(0)
+if args.gpu:
+    torch.cuda.set_device(0)
+
 # Load the YOLOv8 model
 model = YOLO(args.model)
 classes = {0: 'block', 1: 'defense', 2: 'serve', 3: 'set', 4: 'spike'}
