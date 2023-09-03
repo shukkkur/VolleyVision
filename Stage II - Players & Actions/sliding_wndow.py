@@ -25,49 +25,16 @@ parser.add_argument('--verbose', default=False, action='store_true', help='Print
 parser.add_argument('--imgsz', nargs=2, type=int, default=None, help='Model inference resolution `width height`')
 args = parser.parse_args()
 
-torch.cuda.set_device(0)
+# torch.cuda.set_device(0)
 # Load the YOLOv8 model
 model = YOLO(args.model)
 classes = {0: 'block', 1: 'defense', 2: 'serve', 3: 'set', 4: 'spike'}
 
-# Check if the input is an image or video
-is_image = args.input_path.endswith(('.jpg', '.jpeg', '.png', '.bmp', '.gif'))
-is_video = args.input_path.endswith(('.mp4', '.avi', '.mkv', '.mov', '.mpv'))
+formats = ('.mp4', '.avi', '.mkv', '.mov', '.mpv')
+is_video = args.input_path.endswith(formats)
 
-if is_image:
-    # Load and preprocess the image
-    img = cv2.imread(args.input_path)
 
-    if args.imgsz:
-        results = model(img,
-                        imgsz=args.imgsz,
-                        conf=args.conf,
-                        max_det=args.max_det,
-                        classes=args.classes,
-                        verbose=args.verbose)
-    else: 
-        results = model(img,
-                        conf=args.conf,
-                        max_det=args.max_det,
-                        classes=args.classes,
-                        verbose=args.verbose)
-
-    # Create the output directory if it doesn't exist
-    try:
-        os.makedirs(os.path.split(args.output_path)[0], exist_ok=True)
-    except:
-        pass
-
-    # Annotate the image with bounding boxes
-    annotated = results[0].plot(conf=args.show_conf,
-                                labels=args.hide_labels,
-                                line_width=args.line_width,
-                                font_size=args.font_size)
-
-    # Save the annotated image
-    cv2.imwrite(args.output_path, annotated)
-
-elif is_video:
+if is_video:
     # Open the video file
     cap = cv2.VideoCapture(args.input_path)
     fps = cap.get(cv2.CAP_PROP_FPS)
@@ -121,60 +88,60 @@ elif is_video:
 
             # Annotate the image with bounding boxes and frame number
             # Draw the frame number at the bottom-left corner of the frame
-            frame_num_text = f"Frame: {frame_num}"
-            text_color = (255, 255, 255)  # white text
-            bg_color = (0, 0, 0)  # black background
-            font_scale = 2 # 1.0
-            thickness = 2 # 1
-            font = cv2.FONT_HERSHEY_SIMPLEX
-            text_size, _ = cv2.getTextSize(frame_num_text, font, font_scale, thickness)
+            # frame_num_text = f"Frame: {frame_num}"
+            # text_color = (255, 255, 255)  # white text
+            # bg_color = (0, 0, 0)  # black background
+            # font_scale = 2 # 1.0
+            # thickness = 2 # 1
+            # font = cv2.FONT_HERSHEY_SIMPLEX
+            # text_size, _ = cv2.getTextSize(frame_num_text, font, font_scale, thickness)
             ## For 720p video
             # text_x = 10
             # text_y = annotated_frame.shape[0] - 10            
             # cv2.rectangle(annotated_frame, (text_x, text_y - text_size[1]), (text_x + text_size[0], text_y), bg_color, -1)
             # cv2.putText(annotated_frame, frame_num_text, (text_x, text_y), font, font_scale, text_color, thickness)
             ## For 2160p video
-            cv2.rectangle(annotated_frame, (0, 2080), (text_size[0]+15, 2160), bg_color, -1)
-            cv2.putText(annotated_frame, frame_num_text, (10, frame.shape[0]-10), font, font_scale, text_color, thickness)
+            # cv2.rectangle(annotated_frame, (0, 2080), (text_size[0]+15, 2160), bg_color, -1)
+            # cv2.putText(annotated_frame, frame_num_text, (10, frame.shape[0]-10), font, font_scale, text_color, thickness)
             
 
             # Update the event list with the current frame's detections
             boxes = results[0].boxes
             
-            if len(boxes) > 0:
-                for box in boxes:
-                    x_min, y_min, x_max, y_max = box.xyxy[0]
+            # if len(boxes) > 0:
+            #     for box in boxes:
+            #         x_min, y_min, x_max, y_max = box.xyxy[0]
                     
-                    center_x = (x_min + x_max) / 2
-                    center_y = (y_min + y_max) / 2
+            #         center_x = (x_min + x_max) / 2
+            #         center_y = (y_min + y_max) / 2
 
-                    event_str = f"[{frame_num}] {(int(center_x), int(center_y))} {classes[int(box.cls)]} ({float(box.conf):.2f}) "
-                    cv2.circle(annotated_frame, (int(center_x), int(center_y)), 20, (0, 255, 255), -1) 
-            else:
-                event_str = f"[{frame_num}] - "
+            #         event_str = f"[{frame_num}] {(int(center_x), int(center_y))} {classes[int(box.cls)]} ({float(box.conf):.2f}) "
+            #         cv2.circle(annotated_frame, (int(center_x), int(center_y)), 20, (0, 255, 255), -1) 
+            # else:
+            #     event_str = f"[{frame_num}] - "
 
-            event_list.append(event_str)
+            # event_list.append(event_str)
 
             # Draw the event list at the top of the frame
-            event_text = " ".join(list(event_list))
+            # event_text = " ".join(list(event_list))
             font_scale = 2  # 0.8
-            text_color = (255, 255, 255)  # white text
+            # text_color = (255, 255, 255)  # white text
             thickness = 2  # 1
             font = cv2.FONT_HERSHEY_SIMPLEX
-            text_size, _ = cv2.getTextSize(event_text, font, font_scale, thickness)
-            text_x = 20  # 10
-            text_y = 80  # 30
-            line1 = event_text[:len(event_text)//2].strip()
-            line2 = event_text[len(event_text)//2:].strip()
-            bg_color = (0, 0, 0)  # black background
+            # text_size, _ = cv2.getTextSize(event_text, font, font_scale, thickness)
+            # text_x = 20  # 10
+            # text_y = 80  # 30
+            # line1 = event_text[:len(event_text)//2].strip()
+            # line2 = event_text[len(event_text)//2:].strip()
+            # bg_color = (0, 0, 0)  # black background
             ## For 720p video
             # cv2.rectangle(annotated_frame, (0, 0), (1440, 90), bg_color, -1)
             # cv2.putText(annotated_frame, line1, (text_x, text_y), font, font_scale, text_color, thickness)
             # cv2.putText(annotated_frame, line2, (text_x, text_y + int(2.5 * text_size[1])), font, font_scale, text_color, thickness)
             ## For 2160p video
-            cv2.rectangle(annotated_frame, (0, 0), (3840, 220), bg_color, -1)
-            cv2.putText(annotated_frame, line1, (text_x, text_y), font, font_scale, text_color, thickness)
-            cv2.putText(annotated_frame, line2, (text_x, text_y + int(2.5 * text_size[1])), font, font_scale, text_color, thickness)
+            # cv2.rectangle(annotated_frame, (0, 0), (3840, 220), bg_color, -1)
+            # cv2.putText(annotated_frame, line1, (text_x, text_y), font, font_scale, text_color, thickness)
+            # cv2.putText(annotated_frame, line2, (text_x, text_y + int(2.5 * text_size[1])), font, font_scale, text_color, thickness)
 
 
             # Check if there is a detection in the current frame
@@ -219,4 +186,4 @@ elif is_video:
     out.release()
 
 else:
-    raise ValueError("Invalid input format. Please provide either an image or a video file.")
+    raise ValueError(f"Invalid input format. Please provide one from: {formats}")
