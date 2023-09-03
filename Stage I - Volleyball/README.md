@@ -12,6 +12,10 @@
 
 <h2>🏃‍♂️ How to Run</h2>
 
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1X16GNjksEfwVL1090bj3CYHGo772fG6H?usp=sharing)
+
+
 <ol>
   
   <li>
