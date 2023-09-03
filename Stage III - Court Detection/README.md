@@ -41,7 +41,7 @@
 
 
 ```
-python court_detect.py input_path --output_path
+python court_detect.py path_to_file --output_path
 ```
 
 <br>
