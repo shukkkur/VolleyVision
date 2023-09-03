@@ -43,7 +43,7 @@ if is_image:
 
     # Annotate the image with bounding boxes
     annotated = results[0].plot(conf=args.show_conf,
-                                labels=args.hide_labels,
+                                labels=args.show_labels,
                                 line_width=args.line_width,
                                 font_size=args.font_size)
 
