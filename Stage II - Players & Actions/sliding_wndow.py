@@ -110,7 +110,7 @@ if is_video:
                 event_msg = f"{event_detected.popleft()}".upper()
                 text_size, _ = cv2.getTextSize(event_msg, font, font_scale, thickness)
                 text_x = (annotated_frame.shape[1] - text_size[0]) // 2
-                text_y = 220
+                text_y = 0
                 cv2.rectangle(annotated_frame, (text_x-20, text_y), (text_x + text_size[0]+150, text_y + text_size[1]+80), (0, 0, 255), -1)
                 cv2.putText(annotated_frame, event_msg, (text_x, text_y+80), font, 3, (255, 255, 255), 2)
             except IndexError:
