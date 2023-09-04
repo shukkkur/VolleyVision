@@ -47,6 +47,8 @@
 1) ```yolo predict model=actions\yV8_medium\weights\best.pt source=assets\actions.jpg show_conf=False show_labels=True```
 2) ```yolo predict model=players\yV8_medium\weights\best.pt source=assets\players.jpg show_conf=False show_labels=False```
 
+<h3>Action Recognition + Temporal Filtering</h3>
+
 <br>
   
 |   <code>i.</code>   |   <code>ii.</code>   |
