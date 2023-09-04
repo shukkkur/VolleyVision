@@ -75,12 +75,13 @@ predictions = [-, -, spike, -, spike, spike, -, -, spike, spike]
 <p>I really hope this make sense now. Anyway, this simple, yet amazing idea belongs to my former mentor at BallerTV - <strong>Paul Kefer</strong>. Thank you for your patience))). 
 
 <ol>
-  <li>To run the event detection, use `sliding_window.py` script. </li>
+  <li>To run the event detection, use <code>sliding_window.py</code> script. </li>
 
 ```
 !python sliding_wndow.py --model actions/yV8_medium/weights/best.pt --input_path "assets/rallies/rally.mp4" --output_path Output/event_detection.mp4 --conf 0.5
 ```
-  <li>The effectiveness of this approach depends on confidence level (<code>--conf</code>), <a href="https://github.com/shukkkur/VolleyVision/blob/d0790a91c04ba04c5c25259e3abe18f19a55816d/Stage%20II%20-%20Players%20%26%20Actions/sliding_window_verbose.py#L55">sliding window size</a> and <a href="https://github.com/shukkkur/VolleyVision/blob/d0790a91c04ba04c5c25259e3abe18f19a55816d/Stage%20II%20-%20Players%20%26%20Actions/sliding_window_verbose.py#L157">threshhold</a>, so for experimental purposes use `sliding_window_verbose.py`. In addition to event, it also draws <code>[frame_number] (who's action/yellow circle) class_name (confidence)</code> </li>
+  <li>The effectiveness of this approach depends on confidence level (<code>--conf</code>), <a href="https://github.com/shukkkur/VolleyVision/blob/d0790a91c04ba04c5c25259e3abe18f19a55816d/Stage%20II%20-%20Players%20%26%20Actions/sliding_window_verbose.py#L55">sliding window size</a> and <a href="https://github.com/shukkkur/VolleyVision/blob/d0790a91c04ba04c5c25259e3abe18f19a55816d/Stage%20II%20-%20Players%20%26%20Actions/sliding_window_verbose.py#L157">threshhold</a>, so for experimental purposes use <code>sliding_window_verbose.py</code>. In addition to event, it also draws <code>[frame_number] (who's action/yellow circle) class_name (confidence)</code> </li>
+  <li><code>--gpu</code> - for faster inference. Can be added to other scripts (do yourself). and <code>--imgsz</code> - to prevent <strong>YOLO</strong> resizing the input to 640x640 but instead to larger/smaller custom size.</li>
 
 ```
 !python sliding_wndow_verbose.py --model actions/yV8_medium/weights/best.pt --input_path "assets/rallies/rally.mp4" --output_path Output/event_detection.mp4 --conf 0.4 --gpu --imgsz 1920 1080
