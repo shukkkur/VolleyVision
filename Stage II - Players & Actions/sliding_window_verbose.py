@@ -52,7 +52,7 @@ if is_video:
 
     event_list = deque(maxlen=10)  # verbose info at the top of the frame
     event_detected = deque(maxlen=15)  # what to display for the next 15 frames
-    sliding_window = deque(maxlen=5)  # sliding window of 5 frames
+    sliding_window = deque(maxlen=10)  # sliding window of 5 frames
 
     # Event will be declared when 
     # the event_counter exceeds 3
@@ -154,12 +154,12 @@ if is_video:
                 sliding_window.extend(cls)
                 cls, count = Counter(sliding_window).most_common(1)[0]
     
-                if (count >= 3) and (cls != None):
+                if (count >= 5) and (cls != None):
                     event = True
             else:
                 sliding_window.append(None)
 
-            # If event detected 3 times, announce
+            # If event detected 5 times, announce
             if event:
                 event = False
                 for i in range(15):
