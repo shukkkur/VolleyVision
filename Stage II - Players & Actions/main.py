@@ -73,7 +73,11 @@ elif is_video:
 
         if success:
             # Run YOLOv8 inference on the frame
-            results = model(frame)
+            results = model(frame,
+                            conf=args.conf,
+                            max_det=args.max_det,
+                            classes=args.classes,
+                            verbose=False)
 
             # Annotate the frame with bounding boxes
             annotated_frame = results[0].plot(conf=args.show_conf,
