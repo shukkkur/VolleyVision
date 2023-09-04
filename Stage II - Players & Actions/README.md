@@ -80,7 +80,7 @@ predictions = [-, -, spike, -, spike, spike, -, -, spike, spike]
 ```
 !python sliding_wndow.py --model actions/yV8_medium/weights/best.pt --input_path "assets/rallies/rally.mp4" --output_path Output/event_detection.mp4 --conf 0.5
 ```
-  <li>For experimental purposes (to find optimal conf, threshold and window size) use `sliding_window_verbose.py`. In addition to event, it also draws all the predicions, confidence and frame number </li>
+  <li>The effectiveness of this approach depends on confidence level (<code>--conf</code>), <a href="https://github.com/shukkkur/VolleyVision/blob/d0790a91c04ba04c5c25259e3abe18f19a55816d/Stage%20II%20-%20Players%20%26%20Actions/sliding_window_verbose.py#L55">sliding window size</a> and <a href="https://github.com/shukkkur/VolleyVision/blob/d0790a91c04ba04c5c25259e3abe18f19a55816d/Stage%20II%20-%20Players%20%26%20Actions/sliding_window_verbose.py#L157">threshhold</a>, so for experimental purposes use `sliding_window_verbose.py`. In addition to event, it also draws <code>[frame_number] (who's action/yellow circle) class_name (confidence)</code> </li>
 
 ```
 !python sliding_wndow_verbose.py --model actions/yV8_medium/weights/best.pt --input_path "assets/rallies/rally.mp4" --output_path Output/event_detection.mp4 --conf 0.4 --gpu --imgsz 1920 1080
@@ -90,10 +90,10 @@ predictions = [-, -, spike, -, spike, spike, -, -, spike, spike]
 
 |   <code>sliding_window.py</code>   |   <code>sliding_window_verbose.py</code>   |
 |--------------|--------------|
-|  <img src="https://github.com/shukkkur/VolleyVision/blob/bd87bc614df0c6a2b38067b9d7e0c3a7603a4a65/Stage%20II%20-%20Players%20%26%20Actions/assets/out_actions.jpg" width="500">  |  <img src="https://github.com/shukkkur/VolleyVision/blob/b532943613057c9bc99f309434d622c2030235ad/Stage%20II%20-%20Players%20%26%20Actions/assets/out_players.jpg" width="500">  |
+|  <img src="https://github.com/shukkkur/VolleyVision/blob/7cc0a1150273e7a0f1de8f50d741aba69f2339cc/Stage%20II%20-%20Players%20%26%20Actions/assets/sl_wind.png" width="500">  |  <img src="https://github.com/shukkkur/VolleyVision/blob/7cc0a1150273e7a0f1de8f50d741aba69f2339cc/Stage%20II%20-%20Players%20%26%20Actions/assets/sl_wind_verbose.png" width="500">  |
 
 
-<p>By the way, the effectiveness of this approach depends on confidence level (<code>--conf</code>), <a href="https://github.com/shukkkur/VolleyVision/blob/d0790a91c04ba04c5c25259e3abe18f19a55816d/Stage%20II%20-%20Players%20%26%20Actions/sliding_window_verbose.py#L55">sliding window size</a> and <a href="https://github.com/shukkkur/VolleyVision/blob/d0790a91c04ba04c5c25259e3abe18f19a55816d/Stage%20II%20-%20Players%20%26%20Actions/sliding_window_verbose.py#L157">threshhold</a></p>
+<p></p>
 
 <h4>For any additional quesitons feel free to take part in <a href="https://github.com/shukkkur/VolleyVision/discussions">discussions</a>, open an <a href="https://github.com/shukkkur/VolleyVision/issues/new">issue</a> or <a href="https://github.com/shukkkur#feel-free-to-connectcontact">contact</a> me.</h4>
 
