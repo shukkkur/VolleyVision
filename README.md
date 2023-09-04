@@ -43,7 +43,8 @@ Volleyball  | Detection
   ✅ Learn and apply popular CV techniques to volleyball data   <br>
   ✅ Popularize volleyball in the field of AI                   <br>
   ✅ Create volleyball datasets                                 <br>
-  ✅ Contribute to open-soruce community                        
+  ✅ Contribute to open-source community                        <br>
+  ❌ Receive a "thank you" message from someone who benefited from the project.
 </p>
 
 
