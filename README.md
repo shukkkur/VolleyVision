@@ -44,7 +44,7 @@ Volleyball  | Detection
   ✅ Popularize volleyball in the field of AI                   <br>
   ✅ Create volleyball datasets                                 <br>
   ✅ Contribute to open-source community                        <br>
-  ❌ Receive a "thank you" message from anyone who benefited from the project.
+  ✅ Receive a "thank you" message from anyone who benefited from the project. <a href="https://github.com/volleyfreak">@volleyfreak ❤️</a>
 </p>
 
 
