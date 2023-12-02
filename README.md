@@ -56,7 +56,7 @@ Volleyball  | Detection
 
 <br>
 
-<p>❗ If you are facing errors when trying to use RoboFlow model, please refer to this [disscusion](https://github.com/shukkkur/VolleyVision/discussions/5#discussioncomment-7737081)
+<p>❗❗❗If you are facing errors when trying to use RoboFlow model, please refer to this <a href="https://github.com/shukkkur/VolleyVision/discussions/5#discussioncomment-7737081">disscusion</a></p>
 </p>
 
 <details><summary><h3>🏐 Volleyball Detection & Tracking</h3></summary>
