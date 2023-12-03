@@ -72,6 +72,8 @@ def process_video(input_path, output_path):
 
 if __name__ == "__main__":
     # Initialize the Roboflow model
+    # API Key, if doesn't work, refer -->
+    # https://github.com/shukkkur/VolleyVision/discussions/5#discussioncomment-7737081
     rf = Roboflow(api_key="WQp0964J9jw76po6tElU")
     project = rf.workspace().project("court-segmented")
     model = project.version(1).model
