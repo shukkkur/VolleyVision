@@ -34,6 +34,9 @@
   cd VolleyVision\Stage I - Volleyball
   pip install -r requirements.txt
   ```
+
+  <li>❗If you are facing errors when trying to use <strong>RoboFlow model</strong>, please refer to this <a href="https://github.com/shukkkur/VolleyVision/discussions/5#discussioncomment-7737081">disscusion</a></li>
+
   <h3 align="center"><code>MODELS</code><br><code>"yolov7" - fast | "roboflow" - accurate</code></h3>
   
   Let us test on <a href="https://github.com/shukkkur/VolleyVision/blob/a87326441528ee89f4d23a81e2461d6963534134/assets/rally_men.mp4">assets/rally_men.mp4</a>. It's a 5 seconds video that weights about 5.2 MB.
