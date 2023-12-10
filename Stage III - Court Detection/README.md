@@ -37,12 +37,14 @@
   <li>
     You can run <strong>court_detect.py</strong> on either an image or a video. Let's run on both and see the results
   </li>
-</ol>
-
-
+  
 ```
 python court_detect.py path_to_file --output_path
 ```
+
+</ol>
+
+❗If you are facing errors when trying to use <strong>RoboFlow model</strong>, please refer to this <a href="https://github.com/shukkkur/VolleyVision/discussions/5#discussioncomment-7737081">disscusion</a>
 
 <br>
   
