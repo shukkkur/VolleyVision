@@ -155,7 +155,7 @@ else:
 if model_name == 'roboflow':
     #  API key, if doesn't work, refer -->
     #  https://github.com/shukkkur/VolleyVision/discussions/5#discussioncomment-7737081
-    rf = Roboflow(api_key="WQp0964J9jw76po6tElU")
+    rf = Roboflow(api_key="INSERT YOUR OWN API_KEY")
     project = rf.workspace().project("volleyball-tracking")
     model = project.version(18).model
 elif model_name == 'yolov7':
