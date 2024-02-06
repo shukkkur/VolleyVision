@@ -6,15 +6,24 @@ from ultralytics import YOLO
 # Parse command-line arguments
 parser = argparse.ArgumentParser(description='YOLOv8 Image/Video Processing')
 parser.add_argument('--model', required=True, help="Path to model's weights")
-parser.add_argument('--input_path', required=True, help='Path to the input image or video file')
-parser.add_argument('--output_path', default='Output/output.jpg', help='Output directory path (for images) or output file path (for videos)')
-parser.add_argument('--show_conf', default=False, action='store_true', help='Whether to show the confidence scores')
-parser.add_argument('--show_labels', default=False, action='store_true', help='Whether to show the labels')
-parser.add_argument('--conf', type=float, default=0.5, help='Object confidence threshold for detection')
-parser.add_argument('--max_det', type=int, default=300, help='Maximum number of detections per image')
-parser.add_argument('--classes', nargs='+', default=None, help='List of classes to detect')
-parser.add_argument('--line_width', type=int, default=3, help='Line width for bounding box visualization')
-parser.add_argument('--font_size', type=float, default=3, help='Font size for label visualization')
+parser.add_argument('--input_path', required=True,
+                    help='Path to the input image or video file')
+parser.add_argument('--output_path', default='Output/output.jpg',
+                    help='Output directory path (for images) or output file path (for videos)')
+parser.add_argument('--show_conf', default=False, action='store_true',
+                    help='Whether to show the confidence scores')
+parser.add_argument('--show_labels', default=False,
+                    action='store_true', help='Whether to show the labels')
+parser.add_argument('--conf', type=float, default=0.5,
+                    help='Object confidence threshold for detection')
+parser.add_argument('--max_det', type=int, default=300,
+                    help='Maximum number of detections per image')
+parser.add_argument('--classes', nargs='+', default=None,
+                    help='List of classes to detect')
+parser.add_argument('--line_width', type=int, default=3,
+                    help='Line width for bounding box visualization')
+parser.add_argument('--font_size', type=float, default=3,
+                    help='Font size for label visualization')
 args = parser.parse_args()
 
 # Load the YOLOv8 model
@@ -98,4 +107,5 @@ elif is_video:
     out.release()
 
 else:
-    raise ValueError("Invalid input format. Please provide either an image or a video file.")
+    raise ValueError(
+        "Invalid input format. Please provide either an image or a video file.")

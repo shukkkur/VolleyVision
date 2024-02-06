@@ -1,10 +1,12 @@
 import cv2
 import torch
-import os, sys
+import os
+import sys
 import queue
 import argparse
 import warnings
-import time, copy
+import time
+import copy
 from my_utils import *
 from tqdm import tqdm
 from datetime import datetime
@@ -52,7 +54,7 @@ parser.add_argument("--color",
                     type=str,
                     default='yellow',
                     choices=['black', 'white', 'red', 'green', 'purple',
-                                    'blue', 'yellow', 'cyan','gray', 'navy'],
+                             'blue', 'yellow', 'cyan', 'gray', 'navy'],
                     help="color for highlighting the ball")
 parser.add_argument("--no_trace",
                     action='store_true',
@@ -84,7 +86,7 @@ elif color == 'blue':
 elif color == 'cyan':
     color = [255, 255, 0]
 elif color == 'gray':
-    color = [128, 128 ,128]
+    color = [128, 128, 128]
 elif color == 'purple':
     color = [128, 0, 128]
 elif color == 'navy':
@@ -106,7 +108,7 @@ t1 = datetime.now()
 if input_type == 'video':
     input_data = cv2.VideoCapture(input_path)
 
-    if (input_data.isOpened() == False): 
+    if (input_data.isOpened() == False):
         print("Error reading video file")
 else:
     input_data = cv2.imread(input_path)
@@ -120,12 +122,14 @@ else:
 basename = os.path.basename(input_path)
 extension = os.path.splitext(output_path)[1]
 
-if output_path == "":  # 
+if output_path == "":  #
     os.makedirs('Output', exist_ok=True)
     if input_type == 'video':
-        output_path = os.path.join("Output", model_name + 'Detect' + '_' + basename)
+        output_path = os.path.join(
+            "Output", model_name + 'Detect' + '_' + basename)
     else:
-        output_path = os.path.join("Output", model_name + 'Detect' + '_' + basename.split('.')[0] + '.jpg')
+        output_path = os.path.join(
+            "Output", model_name + 'Detect' + '_' + basename.split('.')[0] + '.jpg')
 else:  # check if user path exists, create otherwise
     f = os.path.split(output_path)[0]
     if not os.path.isdir(f) and (f != ''):
@@ -133,10 +137,11 @@ else:  # check if user path exists, create otherwise
 
 if input_type == 'video':
     if (extension != '.mp4') and (extension != ''):
-        raise Exception(f"Extention for output video should be `.mp4`, but got {extension}")
+        raise Exception(
+            f"Extention for output video should be `.mp4`, but got {extension}")
 
     fname = output_path
-    fps = input_data.get(5) 
+    fps = input_data.get(5)
     frame_width = int(input_data.get(3))
     frame_height = int(input_data.get(4))
     dims = (frame_width, frame_height)
@@ -145,7 +150,8 @@ if input_type == 'video':
     output_writer = cv2.VideoWriter(fname, fourcc, fps, dims)
 else:
     if (extension not in ['.jpg', '.png', '.jpeg']) and (extension != ''):
-        raise Exception(f"Extension for output image should be .jpg or .png, but got {extension}")
+        raise Exception(
+            f"Extension for output image should be .jpg or .png, but got {extension}")
 
     output_writer = output_path
 ###################
@@ -174,13 +180,14 @@ for i in range(0, 8):
 
 
 if input_type == 'video':
-    pbar = tqdm(total=int(total_frames), bar_format='Processing: {desc}{percentage:3.0f}%|{bar:10}')
+    pbar = tqdm(total=int(total_frames),
+                bar_format='Processing: {desc}{percentage:3.0f}%|{bar:10}')
 
 
 ### Process Video & Write Frames ###
 if input_type == 'video':
     while input_data.isOpened():
-        
+
         ret, image = input_data.read()
         if not ret:
             break
@@ -219,7 +226,7 @@ if input_type == 'video':
                         try:
                             cv2.circle(debug_image, center, r-10, color, -1)
                         except:
-                            cv2.circle(debug_image, center, r, color, -1)                
+                            cv2.circle(debug_image, center, r, color, -1)
         ###################
 
         output_writer.write(debug_image)
@@ -260,9 +267,9 @@ else:
                     try:
                         cv2.circle(debug_image, center, r-10, color, -1)
                     except:
-                        cv2.circle(debug_image, center, r, color, -1)  
+                        cv2.circle(debug_image, center, r, color, -1)
     ###################
-                        
+
     cv2.imwrite(output_writer, debug_image)
 
 

@@ -1,5 +1,6 @@
 import torch
-import cv2, PIL
+import cv2
+import PIL
 import numpy as np
 import matplotlib.pyplot as plt
 from models.yolo import Model
@@ -49,7 +50,7 @@ def generate_frames(video_file: str) -> Generator[np.ndarray, None, None]:
 
 def plot_image(image: np.ndarray, size: int = 12) -> None:
     plt.figure(figsize=(size, size))
-    plt.imshow(image[...,::-1])
+    plt.imshow(image[..., ::-1])
     plt.show()
 
 
@@ -64,16 +65,17 @@ def x_y_w_h(prediciton, model_name) -> Tuple:
             y = int(prediciton.json()['predictions'][0]['y'])
             w = int(prediciton.json()['predictions'][0]['width'])
             h = int(prediciton.json()['predictions'][0]['height'])
-            
+
             x0, y0 = int(x - w / 2), int(y - h / 2)
-            
+
             return x0, y0, w, h
         except:
             return (0, 0, 0, 0)
 
     elif model_name == 'yolov7':
         try:
-            x_min, y_min, x_max, y_max, confidence, class_id = prediciton.pred[0].cpu().numpy()[0]
+            x_min, y_min, x_max, y_max, confidence, class_id = prediciton.pred[0].cpu().numpy()[
+                0]
             x = int(x_min)
             y = int(y_min)
             w = int(x_max - x_min)
@@ -91,19 +93,19 @@ def extract_coord(prediciton: dict) -> Tuple:
 
     x0, y0 = int(x - w / 2), int(y - h / 2)
     x1, y1 = int(x + w / 2), int(y + h / 2)
-    
-    return x0, y0, x1, y1 
+
+    return x0, y0, x1, y1
 
 
 def draw_box(src_img: np.ndarray, coords: Tuple, color=(255, 0, 0), thickness=2) -> np.ndarray:
     start_point = coords[0], coords[1]
     end_point = coords[2], coords[3]
-    
+
     return cv2.rectangle(src_img, start_point, end_point, color, thickness)
 
 
 def calc_distance(bbox1: Tuple[int, int, int, int],
-                                bbox2: Tuple[int, int, int, int]):
+                  bbox2: Tuple[int, int, int, int]):
     """
     Calculte Euclidean distance between two bbox
     """
@@ -118,7 +120,7 @@ def calc_distance(bbox1: Tuple[int, int, int, int],
 def calc_centroid(bbox):
     """
     Calculate the centroid of a given bounding box
-    
+
     bbox should be a tuple of `x, y, w, h`:
     `(x, y)` - upper left coordinate of the bounding box
     `w` - width
@@ -148,7 +150,8 @@ def custom(path_or_model='path/to/model.pt', autoshape=True):
     Returns:
         pytorch model
     """
-    model = torch.load(path_or_model, map_location=torch.device('cpu')) if isinstance(path_or_model, str) else path_or_model  # load checkpoint
+    model = torch.load(path_or_model, map_location=torch.device('cpu')) if isinstance(
+        path_or_model, str) else path_or_model  # load checkpoint
     if isinstance(model, dict):
         model = model['ema' if model.get('ema') else 'model']  # load model
 
@@ -157,7 +160,8 @@ def custom(path_or_model='path/to/model.pt', autoshape=True):
     hub_model.names = model.names  # class names
     if autoshape:
         hub_model = hub_model.autoshape()  # for file/URI/PIL/cv2/np inputs and NMS
-    device = select_device('0' if torch.cuda.is_available() else 'cpu')  # default to GPU if available
+    # default to GPU if available
+    device = select_device('0' if torch.cuda.is_available() else 'cpu')
     return hub_model.to(device)
 
 
@@ -165,13 +169,14 @@ class RoboYOLO:
     """
     Unified class for RoboFlow and yoloV7 models 
     """
+
     def __init__(self, model_name, model, confidence):
         self.name = model_name
         self.model = model
         self.conf = confidence
 
     def predict(self, frame):
-        
+
         if self.name == 'roboflow':
             pred = self.model.predict(frame, confidence=self.conf)
             return pred
@@ -190,7 +195,7 @@ def get_circle(bbox: Tuple[int, int, int, int]):
     the upper left corner and the width and heigh
     """
     x0, y0, w, h = bbox
-    
+
     centr_x = int(x0 + w / 2)
     centr_y = int(y0 + h / 2)
     radius = int((w + h) / 4)
