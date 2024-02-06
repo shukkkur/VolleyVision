@@ -1,10 +1,12 @@
 import cv2
 import torch
 import queue
-import os, sys
+import os
+import sys
 import argparse
 import warnings
-import time, copy
+import time
+import copy
 from my_utils import *
 from tqdm import tqdm
 from datetime import datetime
@@ -20,39 +22,39 @@ warnings.filterwarnings("ignore")
 parser = argparse.ArgumentParser()
 
 parser.add_argument("--input_video_path",
-                                        type=str,
-                                        default="assets/back_view.mp4",
-                                        help="path to the video with volleyball in it")
+                    type=str,
+                    default="assets/back_view.mp4",
+                    help="path to the video with volleyball in it")
 parser.add_argument("--output_video_path",
-                                        type=str,
-                                        default="",
-                                        help="path for the output video (.mp4), default new VideoOutput folder")
+                    type=str,
+                    default="",
+                    help="path for the output video (.mp4), default new VideoOutput folder")
 parser.add_argument("--model",
-                                        type=str,
-                                        default='roboflow',
-                                        choices=['roboflow', 'yolov7'],
-                                        help="which model to use for prediction")
+                    type=str,
+                    default='roboflow',
+                    choices=['roboflow', 'yolov7'],
+                    help="which model to use for prediction")
 parser.add_argument("--confidence",
-                                        type=float,
-                                        default=0.2,
-                                        help="prediction confidence")
+                    type=float,
+                    default=0.2,
+                    help="prediction confidence")
 parser.add_argument("--show",
-                                        action='store_true',
-                                        help="watch preview")
+                    action='store_true',
+                    help="watch preview")
 parser.add_argument("--marker",
-                                        type=str,
-                                        default='circle',
-                                        choices=['circle', 'box'],
-                                        help="how to highlight the ball")
+                    type=str,
+                    default='circle',
+                    choices=['circle', 'box'],
+                    help="how to highlight the ball")
 parser.add_argument("--color",
-                                        type=str,
-                                        default='yellow',
-                                        choices=['black', 'white', 'red', 'green', 'purple',
-                                                        'blue', 'yellow', 'cyan','gray', 'navy'],
-                                        help="color for highlighting the ball")
+                    type=str,
+                    default='yellow',
+                    choices=['black', 'white', 'red', 'green', 'purple',
+                             'blue', 'yellow', 'cyan', 'gray', 'navy'],
+                    help="color for highlighting the ball")
 parser.add_argument("--no_trace",
-                                        action='store_true',
-                                        help="don't draw trajectory of the ball")
+                    action='store_true',
+                    help="don't draw trajectory of the ball")
 
 args = parser.parse_args()
 input_video = args.input_video_path
@@ -79,7 +81,7 @@ elif color == 'blue':
 elif color == 'cyan':
     color = [255, 255, 0]
 elif color == 'gray':
-    color = [128, 128 ,128]
+    color = [128, 128, 128]
 elif color == 'purple':
     color = [128, 0, 128]
 elif color == 'navy':
@@ -95,7 +97,7 @@ t1 = datetime.now()
 ### Capture Video ###
 video_in = cv2.VideoCapture(input_video)
 
-if (video_in.isOpened() == False): 
+if (video_in.isOpened() == False):
     print("Error reading video file")
 ###################
 
@@ -104,19 +106,21 @@ if (video_in.isOpened() == False):
 basename = os.path.basename(input_video)
 extension = os.path.splitext(output_video)[1]
 
-if output_video == "":  # 
+if output_video == "":  #
     os.makedirs('VideoOutput', exist_ok=True)
-    output_video = os.path.join("VideoOutput", model_name + 'Track' + '_' + basename)
+    output_video = os.path.join(
+        "VideoOutput", model_name + 'Track' + '_' + basename)
 else:  # check if user path exists, create otherwise
     f = os.path.split(output_video)[0]
     if not os.path.isdir(f):
         os.makedirs(f)
 
 if (extension != '.mp4') and (extension != ''):
-    raise Exception(f"Extention for output video should be `.mp4`, but got {extension}")
+    raise Exception(
+        f"Extention for output video should be `.mp4`, but got {extension}")
 
 fname = output_video
-fps = video_in.get(5) 
+fps = video_in.get(5)
 frame_width = int(video_in.get(3))
 frame_height = int(video_in.get(4))
 dims = (frame_width, frame_height)
@@ -150,10 +154,11 @@ while bbox == (0, 0, 0, 0):
         break
 
     pred = model.predict(frame)
-    bbox = x_y_w_h(pred, model_name) 
-    
+    bbox = x_y_w_h(pred, model_name)
+
 if bbox == (0, 0, 0, 0):
-    raise Exception("Processed the whole video but failed to detect any volleyball")
+    raise Exception(
+        "Processed the whole video but failed to detect any volleyball")
 ###################
 
 
@@ -175,13 +180,14 @@ tracker = initialize_tracker(image, bbox)  # image, bounding box
 ### Flag Variables & Progress Bar ###
 previous = bbox
 counter = 0
-pbar = tqdm(total=int(total_frames), bar_format='Processing: {desc}{percentage:3.0f}%|{bar:10}')
+pbar = tqdm(total=int(total_frames),
+            bar_format='Processing: {desc}{percentage:3.0f}%|{bar:10}')
 ###################
 
 
 ### Process Video & Write Frames ###
 while video_in.isOpened():
-    
+
     ret, image = video_in.read()
     if not ret:
         break
@@ -189,14 +195,14 @@ while video_in.isOpened():
 
     # Update Progress Bar
     pbar.update(1)
-    
+
     # Updating Tracker
     ok, bbox = tracker.update(image)
     counter += 1
 
     if counter == 10:
         #  calculate Euclidean Distance
-        #  between bbox 10 frames apart 
+        #  between bbox 10 frames apart
         distance = calc_distance(previous, bbox)
         previous = bbox
 
@@ -206,13 +212,13 @@ while video_in.isOpened():
             q.pop()
         else:
             if distance > 50:
-                #  significant change in bbox location / all good 
+                #  significant change in bbox location / all good
                 q.appendleft(bbox)
                 q.pop()
                 counter = 0
             else:
                 #  bbox hasn't moved / stuck on non-volleyball object
-                #  since we know that volleyball woud always be in motion 
+                #  since we know that volleyball woud always be in motion
                 pred = model.predict(image)
                 bbox = x_y_w_h(pred, model_name)
                 q.appendleft(bbox)
@@ -221,7 +227,7 @@ while video_in.isOpened():
 
                 if bbox != (0, 0, 0, 0):
                     tracker = initialize_tracker(image, bbox)
-                    previous = bbox 
+                    previous = bbox
                 else:
                     q.appendleft(None)
                     q.pop()
@@ -245,7 +251,7 @@ while video_in.isOpened():
                     try:
                         cv2.circle(debug_image, center, r-10, color, -1)
                     except:
-                        cv2.circle(debug_image, center, r, color, -1)                
+                        cv2.circle(debug_image, center, r, color, -1)
     ###################
 
     video_out.write(debug_image)
@@ -255,7 +261,7 @@ while video_in.isOpened():
 
     k = cv2.waitKey(1)
     if k == ord('p'):
-        cv2.waitKey(-1) # PAUSE 
+        cv2.waitKey(-1)  # PAUSE
     if k == 27:  # ESC
         break
 

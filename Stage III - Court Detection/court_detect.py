@@ -19,13 +19,15 @@ def process_image(input_path, output_path):
     mask_image = cv2.resize(mask_image, (image_width, image_height))
 
     # Find and Draw Contours
-    contours, _ = cv2.findContours(mask_image, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    contours, _ = cv2.findContours(
+        mask_image, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     largest_contour = max(contours, key=cv2.contourArea)
     epsilon = 0.01 * cv2.arcLength(largest_contour, True)
     trapezoid = cv2.approxPolyDP(largest_contour, epsilon, True)
     img = cv2.imread(input_path)
     cv2.drawContours(img, [trapezoid], 0, (0, 0, 0), 5)
     cv2.imwrite(output_path, img)
+
 
 def process_video(input_path, output_path):
     # Load the video file
@@ -39,7 +41,8 @@ def process_video(input_path, output_path):
 
     # Define the codec for the output video
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-    output_video = cv2.VideoWriter(output_path, fourcc, fps, (frame_width, frame_height))
+    output_video = cv2.VideoWriter(
+        output_path, fourcc, fps, (frame_width, frame_height))
 
     # Loop through each frame of the video
     for _ in tqdm(range(total_frames), desc="Processing video"):
@@ -62,7 +65,7 @@ def process_video(input_path, output_path):
 
     # Destroy any remaining windows
     cv2.destroyAllWindows()
-    
+
     # Delete temporary files
     if os.path.exists('temp.jpg'):
         os.remove('temp.jpg')
@@ -79,9 +82,12 @@ if __name__ == "__main__":
     model = project.version(1).model
 
     # Define and parse command-line arguments
-    parser = argparse.ArgumentParser(description='Process an image or a video.')
-    parser.add_argument('input_path', type=str, help='Path to the input video or image.')
-    parser.add_argument('--output_path', type=str, default='./Output', help='Path to save the processed file.')
+    parser = argparse.ArgumentParser(
+        description='Process an image or a video.')
+    parser.add_argument('input_path', type=str,
+                        help='Path to the input video or image.')
+    parser.add_argument('--output_path', type=str, default='./Output',
+                        help='Path to save the processed file.')
     args = parser.parse_args()
 
     # Check if the output directory exists, if not, create it
