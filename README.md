@@ -164,11 +164,10 @@ Volleyball  | Detection
   
 <ol>
   <li>
-    <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking">Volleyball</a> (1 class: volleyball)
+    Volleyball (1 class: volleyball)
     <ul>
-      <li>Source Images - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/9">25k_version</a></li>
-      <li>Resized (640x640) - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/13">25_version_640</a></li>
-      <li>Resized (800x800) - <a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking/dataset/18">800_by_800_version</a></li>
+      <li><s>Source Images - <a href="https://universe.roboflow.com/volleyvision/volleyball-tracking/dataset/9">25k_version</a></s></li>
+      <li>Duplicates Removed - <a href="https://universe.roboflow.com/shukur-sabzaliev1/volleyball_v2">19k_version</a></li>
     </ul>
   </li>
   
