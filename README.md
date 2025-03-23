@@ -57,8 +57,8 @@ Volleyball  | Detection
 
 <details><summary><h3>🏐 Volleyball Detection & Tracking</h3></summary>
 
-<a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking/model/"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
-<a href="https://universe.roboflow.com/shukur-sabzaliev-bh7pq/volleyball-tracking"><img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img></a>
+<a href="https://universe.roboflow.com/shukur-sabzaliev1/volleyball_v2/model/2"><img src="https://app.roboflow.com/images/try-model-badge.svg"></img></a>
+<a href="https://universe.roboflow.com/shukur-sabzaliev1/volleyball_v2"><img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img></a>
 <a href="https://github.com/shukkkur/VolleyVision/tree/main/Stage%20I%20-%20Volleyball/weights/weights"><img src="https://img.shields.io/badge/Download-YOLOV7--TINY%20Weights-red" alt="yV8 Weights"></a>
 <a href="https://wandb.ai/volleyvision/YOLOR/runs/2u30vyzp/overview?workspace=user-shukkkur"><img src="https://raw.githubusercontent.com/wandb/assets/main/wandb-github-badge-gradient.svg" alt="WandB Badge"></a>
 
